@@ -44,13 +44,13 @@ const qna: IQnA[] = [
   {
     question: 'Stop bothering me',
     answer:
-      'You have not heard from the because further information is not available at this time, Once I have an update I’ll be sure to loop you in.',
+      'You have not heard from me because further information is not available at this time, Once I have an update I’ll be sure to loop you in.',
     alternativeAnswers: [],
   },
   {
     question: 'I don’t want to talk to you right now!',
     answer:
-      'I a currently tied up with something but I will connect with you once I am free.',
+      'I am currently tied up with something but I will connect with you once I am free.',
     alternativeAnswers: [],
   },
   {
@@ -75,7 +75,7 @@ const qna: IQnA[] = [
   {
     question: 'answer my emails',
     answer:
-      'If There’s a better way to get in contact with you please let me know as I am hoping to have this resolved as soon as possible',
+      'If there’s a better way to get in contact with you please let me know as I am hoping to have this resolved as soon as possible',
     alternativeAnswers: [],
   },
   {
@@ -112,7 +112,7 @@ const qna: IQnA[] = [
   {
     question: 'Stay in your own lane',
     answer:
-      'Thank you for your input. I’ll keep that in mind. As I move forward with decisions that fall within my responsibilities',
+      'Thank you for your input. I’ll keep that in mind as I move forward with decisions that fall within my responsibilities',
     alternativeAnswers: [],
   },
   {
@@ -164,7 +164,7 @@ const qna: IQnA[] = [
   },
   {
     question:
-      "I'm going to need a whole lot of more information if you want this me to do this",
+      "I'm going to need a whole lot of more information if you want me to do this",
     answer:
       'Please let me know when further details become available as I require more information to successfully complete this task',
     alternativeAnswers: [],
@@ -172,7 +172,7 @@ const qna: IQnA[] = [
   {
     question: 'Stop calling me before my workday even starts',
     answer:
-      "If you need to contact me, please note that my working hours being at 8 am and 6 pm communications received prior to this won't be seen.",
+      "If you need to contact me, please note that my working hours being at 8 am and 6 pm. Communications received prior to this won't be seen.",
     alternativeAnswers: [],
   },
   {
@@ -190,7 +190,7 @@ const qna: IQnA[] = [
   {
     question: 'I told you so and now this is your problem',
     answer:
-      'I did previosly note that this was a likely outcome. How do you plan to resolve this?',
+      'I did previously note that this was a likely outcome. How do you plan to resolve this?',
     alternativeAnswers: [],
   },
   {
