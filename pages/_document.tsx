@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className="bg-gray-100 text-black antialiased dark:bg-gray-800 dark:text-white">
+        <body className="bg-gray-800 text-black antialiased">
           <Main />
           <NextScript />
         </body>
