@@ -13,7 +13,7 @@ module.exports = {
         primary: colors.sky,
       },
       fontFamily: {
-        dancing: ['Dancing Script', 'cursive', ...defaultTheme.fontFamily.sans],
+        dancing: ['DancingScript', 'cursive', ...defaultTheme.fontFamily.sans],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
     },

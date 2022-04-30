@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'DancingScript';
+  font-style: normal;
+  font-weight: 100 400;
+  font-display: optional;
+  src: url(/fonts/Dancing_Script/DancingScript-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: optional;
+  src: url(/fonts/Dancing_Script/DancingScript-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 400;
+  font-display: optional;
+  src: url(/fonts/Inter/Inter-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: optional;
+  src: url(/fonts/Inter/Inter-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: optional;
+  src: url(/fonts/Inter/Inter-Bold.ttf) format('opentype');
+}

@@ -6,6 +6,41 @@ class MyDocument extends Document {
       <Html lang="en" className="scroll-smooth">
         <Head>
           <link
+            rel="preload"
+            href="/fonts/Dancing_Script/DancingScript-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Dancing_Script/DancingScript-Medium.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter/Inter-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter/Inter-Medium.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/Inter/Inter-Bold.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link
             rel="icon"
             type="image/png"
             sizes="32x32"
@@ -16,12 +51,6 @@ class MyDocument extends Document {
             type="image/png"
             sizes="16x16"
             href="/static/images/favicon-16x16.png"
-          />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter&display=swap"
-            rel="stylesheet"
           />
         </Head>
         <body className="bg-gray-800 font-sans text-gray-200 antialiased">
