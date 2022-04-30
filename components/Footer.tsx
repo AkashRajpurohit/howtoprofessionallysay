@@ -26,18 +26,16 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
         </a>{' '}
         and her work bestie.
       </p>
-      <p>
-        <ul className="flex gap-4">
-          <li>
-            <a
-              href="https://github.com/AkashRajpurohit/howdoyouprofessionallysay"
-              rel="nofollow noopener noreferrer"
-              className="text-gray-200 underline hover:text-gray-300"
-            >
-              Github
-            </a>
-          </li>
-        </ul>
+      <p className="flex gap-3">
+        <span>
+          <a
+            href="https://github.com/AkashRajpurohit/howdoyouprofessionallysay"
+            rel="nofollow noopener noreferrer"
+            className="text-gray-200 underline hover:text-gray-300"
+          >
+            Github
+          </a>
+        </span>
       </p>
     </footer>
   );
