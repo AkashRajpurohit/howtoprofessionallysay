@@ -4,7 +4,7 @@ interface IFooterProps {}
 
 const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
   return (
-    <footer className="flex items-center justify-between bg-primary-600 py-12 px-40 text-gray-200">
+    <footer className="mx-auto flex flex-col items-center justify-around gap-4 bg-primary-600 py-12 px-4 text-gray-200 md:flex-row">
       <p className="font-medium">
         Made by{' '}
         <a
@@ -23,8 +23,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
           className="text-gray-200 underline hover:text-gray-300"
         >
           @loewhaley
-        </a>{' '}
-        and her work bestie.
+        </a>
       </p>
       <p className="flex gap-3">
         <span>

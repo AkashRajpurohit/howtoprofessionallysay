@@ -11,13 +11,15 @@ const SearchInput: FunctionComponent<{
   setSearchValue: React.Dispatch<React.SetStateAction<string>>;
 }> = ({ setSearchValue }) => {
   return (
-    <div className="relative">
+    <div className="relative block">
+      <span className="sr-only">Search</span>
       <input
         aria-label="What are you looking for?"
         type="text"
         onChange={(e) => setSearchValue(e.target.value)}
         placeholder="What are you looking for?"
-        className="block w-full rounded-md border border-primary-900 bg-gray-800 px-4 py-2 text-gray-100 placeholder:bg-gray-700 focus:border-primary-500 focus:ring-primary-500"
+        // className="block w-full rounded-md border border-primary-900 bg-gray-800 text-gray-100 placeholder:bg-gray-700 focus:border-primary-500 focus:ring-primary-500"
+        className="block w-full rounded-md border border-gray-600 bg-gray-700 py-2 pr-3 shadow-sm placeholder:italic placeholder:text-gray-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm"
       />
       <svg
         className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
