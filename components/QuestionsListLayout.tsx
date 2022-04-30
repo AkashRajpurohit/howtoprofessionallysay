@@ -1,5 +1,6 @@
 import { IQnA } from 'lib/types';
-import React, { FunctionComponent, useState, useId } from 'react';
+import React, { FunctionComponent, useState } from 'react';
+import { matchSorter } from 'match-sorter';
 import QuestionCard from './QuestionCard';
 
 interface IQuestionsListLayoutProps {
@@ -40,10 +41,8 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
   qnas,
 }): JSX.Element => {
   const [searchValue, setSearchValue] = useState('');
-  const filteredQuestions = qnas.filter((qna) => {
-    const searchContent =
-      qna.question + qna.answer + (qna.alternativeAnswers || []).join(' ');
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase());
+  const filteredQuestions = matchSorter(qnas, searchValue, {
+    keys: ['question', 'answer', 'alternativeAnswers'],
   });
 
   const questionsToDisplay =
