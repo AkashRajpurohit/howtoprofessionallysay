@@ -15,15 +15,17 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
       <Disclosure>
         {({ open }) => (
           <div className="my-2">
-            <Disclosure.Button className="flex w-full items-center justify-between bg-primary-100 px-4 py-6 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
+            <Disclosure.Button className="flex w-full items-center justify-between gap-2 bg-primary-100 px-4 py-6 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
               <h3 className="text-xl font-bold leading-9 tracking-tight xl:text-2xl">
                 {qna.question}
               </h3>
-              <ArrowUp
-                className={`${
-                  open ? 'rotate-180 transform' : ''
-                } h-6 w-6 text-primary-500`}
-              />
+              <span className="h-6 w-6">
+                <ArrowUp
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } text-primary-500`}
+                />
+              </span>
             </Disclosure.Button>
             <Disclosure.Panel className="bg-primary-200">
               <ul className="px-4 py-6 text-xl font-medium text-gray-800">
