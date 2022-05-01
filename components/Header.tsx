@@ -12,7 +12,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
       <p className="text-center text-xl font-bold text-gray-200">
         {siteMetadata.description}{' '}
         <small className="text-sm text-gray-300">
-          (not really, try at your own risk 😜)
+          (not really, try at your own risk)
         </small>
       </p>
       <div className="flex flex-col gap-4 md:flex-row">

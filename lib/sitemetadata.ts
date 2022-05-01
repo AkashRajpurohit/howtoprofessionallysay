@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'How to professionally say',
   author: 'Akash Rajpurohit',
-  description: 'A guide for your daily professional interactions',
+  description: `A guide for your daily "professional" interactions`,
   language: 'en-us',
   siteUrl: 'https://howtoprofessionallysay.akashrajpurohit.com',
   siteRepo: 'https://github.com/AkashRajpurohit/howtoprofessionallysay',
