@@ -1,7 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { IQnA } from 'lib/types';
 import React, { FunctionComponent } from 'react';
-import { ArrowUp } from 'react-feather';
+import { ArrowRight, ArrowUp } from 'react-feather';
 
 interface IQuestionCardProps {
   qna: IQnA;
@@ -30,24 +30,11 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
               </span>
             </Disclosure.Button>
             <Disclosure.Panel className="bg-primary-200">
-              <ul className="px-4 py-6 text-xl font-medium text-gray-800">
+              <ul className="px-4 py-4 text-xl font-medium text-gray-800">
                 {(answers || []).map((answer) => (
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 text-primary-900">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
+                  <li className="my-1 flex items-start gap-2">
+                    <span className="mt-0.5 text-primary-900">
+                      <ArrowRight />
                     </span>
                     <div>{answer}</div>
                   </li>
