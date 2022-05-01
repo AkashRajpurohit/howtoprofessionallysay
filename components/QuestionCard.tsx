@@ -32,7 +32,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
             <Disclosure.Panel className="bg-primary-200">
               <ul className="px-4 py-4 text-xl font-medium text-gray-800">
                 {(answers || []).map((answer) => (
-                  <li className="my-1 flex items-start gap-2">
+                  <li className="my-1 flex items-start gap-2" key={answer}>
                     <span className="mt-0.5 text-primary-900">
                       <ArrowRight />
                     </span>
