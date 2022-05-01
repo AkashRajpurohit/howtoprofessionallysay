@@ -7,17 +7,19 @@ A simple static website for common phrases we might want to say to your colleagu
 
 The data for this is being collected from content created by _[@loewhaley](https://www.instagram.com/loewhaley/)_ on instagram. 
 
-If you want to add/update any more questions and answers then please feel free to check the data [here](/content/qna.ts) to update and send a PR for it :)
-
 # Technology Stack 💻
 
 * Framework: [Next.js](https://nextjs.org)
 * Styling: [TailwindCSS](https://tailwindcss.com)
 * Deployment: [Vercel](https://vercel.com)
 
-## Bugs or Requests 🐛
+# Bugs or Requests 🐛
 
 If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/new?template=bug_report.md). If you feel the project is missing a feature, please raise a [ticket](https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/new?template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome.
+
+# Contributions 🤝
+
+Please check the [guide](/CONTRIBUTING.md) to learn more about contributing to this project
 
 # Credits 🙏
 
