@@ -30,6 +30,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
           <a
             href="https://github.com/AkashRajpurohit/howdoyouprofessionallysay"
             rel="nofollow noopener noreferrer"
+            target="_blank"
             className="text-gray-200 underline hover:text-gray-300"
           >
             Github
