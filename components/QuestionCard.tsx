@@ -10,6 +10,8 @@ interface IQuestionCardProps {
 const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
   qna,
 }): JSX.Element => {
+  const answers = [qna.answer, ...(qna.alternativeAnswers || [])];
+
   return (
     <div className="w-full">
       <Disclosure>
@@ -29,14 +31,27 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
             </Disclosure.Button>
             <Disclosure.Panel className="bg-primary-200">
               <ul className="px-4 py-6 text-xl font-medium text-gray-800">
-                <li>{qna.answer}</li>
-                {qna.alternativeAnswers && qna.alternativeAnswers.length > 0 && (
-                  <li>
-                    {qna.alternativeAnswers.map((answer) => (
-                      <li key={answer}>{answer}</li>
-                    ))}
+                {(answers || []).map((answer) => (
+                  <li className="flex items-start gap-2">
+                    <span className="mt-1 text-primary-900">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </span>
+                    <div>{answer}</div>
                   </li>
-                )}
+                ))}
               </ul>
             </Disclosure.Panel>
           </div>
