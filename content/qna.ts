@@ -73,7 +73,7 @@ const qna: IQnA[] = [
     alternativeAnswers: [],
   },
   {
-    question: 'answer my emails',
+    question: 'Answer my emails',
     answer:
       'If there’s a better way to get in contact with you please let me know as I am hoping to have this resolved as soon as possible',
     alternativeAnswers: [],
