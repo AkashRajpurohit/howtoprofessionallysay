@@ -36,16 +36,6 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
             Github
           </a>
         </span>
-        <span>
-          <a
-            href="https://vercel.com?utm_source=howtoprofessionallysay&utm_campaign=oss"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-            className="text-gray-200 underline hover:text-gray-300"
-          >
-            Powered by Vercel
-          </a>
-        </span>
       </p>
     </footer>
   );

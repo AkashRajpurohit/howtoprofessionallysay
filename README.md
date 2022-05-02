@@ -44,7 +44,3 @@ Please check the [guide](/CONTRIBUTING.md) to learn more about contributing to t
 * [Linkedin](https://www.linkedin.com/in/AkashRajpurohit)
 * [Instagram](https://www.instagram.com/akashwho.codes)
 * [Twitter](https://www.twitter.com/AkashWhoCodes)
-
-
-
-[![https://vercel.com?utm_source=howtoprofessionallysay&utm_campaign=oss](./public/powered-by-vercel.svg)](https://vercel.com?utm_source=howtoprofessionallysay&utm_campaign=oss)
