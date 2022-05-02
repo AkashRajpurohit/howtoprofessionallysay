@@ -140,7 +140,7 @@ const qna: IQnA[] = [
     alternativeAnswers: [],
   },
   {
-    question: 'Google that your self',
+    question: 'Google that yourself',
     answer:
       'The internet is a great resource for these types of questions and I am available to clarify elements that you are not able to find online.',
     alternativeAnswers: [],
