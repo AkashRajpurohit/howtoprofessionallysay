@@ -7,6 +7,19 @@ A simple static website for common phrases we might want to say to your colleagu
 
 The data for this is being collected from content created by _[@loewhaley](https://www.instagram.com/loewhaley/)_ on instagram. 
 
+# Disclaimer ❎
+Hello reader. If you are coming from [hackernews](https://news.ycombinator.com/item?id=31224996) or [reddit](https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/), firstly I want to thank you for sharing your thoughts and suggestions (if any). The intent of the project is not to make you respond in a passive aggressive tone but to show you some alternatives of **how you might feel like saying sometimes** over **how you can reframe it a bit better (in some cases atleast)**
+
+I have gathered the data from a content creator on Instagram ([@loewhaley](https://www.instagram.com/loewhaley/)) and yes of course the credits are mentioned everywhere about this.
+
+Based on the responses there it seems like what I started as fun activity can be something more than I thought.
+
+I'll be looking into the possibilities of improving the content to make it less satire and more appropriate for most of the people out there.
+
+Since it's an open sourced project, you can share your feedbacks and idea improvements [here](https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/new?template=feature_request.md).
+
+At ending note, I would just like to say to anyone who feels this is really good and I'm going to use this word by word, please don't, take this as a grain of salt and not seriously (atleast at this point of time till I better structure the content) and anyone who feels negative about this, I'm sorry you feel that way but don't take this very seriously. 
+
 # Technology Stack 💻
 
 * Framework: [Next.js](https://nextjs.org)
