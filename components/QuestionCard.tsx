@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react';
-import { IQnA } from 'lib/types';
+import { Flow, IQnA } from 'lib/types';
 import React, { FunctionComponent } from 'react';
 import { ArrowRight, ArrowUp } from 'react-feather';
 
@@ -10,7 +10,11 @@ interface IQuestionCardProps {
 const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
   qna,
 }): JSX.Element => {
-  const answers = [qna.answer, ...(qna.alternativeAnswers || [])];
+  const question = qna.flow === Flow.A_TO_B ? qna.question : qna.answer;
+  const answers =
+    qna.flow === Flow.A_TO_B
+      ? [qna.answer, ...(qna.alternativeAnswers || [])]
+      : [qna.question];
 
   return (
     <div className="w-full">
@@ -19,7 +23,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
           <div className="my-2">
             <Disclosure.Button className="flex w-full items-center justify-between gap-2 bg-primary-100 px-4 py-6 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
               <h3 className="text-xl font-bold leading-9 tracking-tight xl:text-2xl">
-                {qna.question}
+                {question}
               </h3>
               <span className="h-6 w-6">
                 <ArrowUp
@@ -31,8 +35,8 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
             </Disclosure.Button>
             <Disclosure.Panel className="bg-primary-200">
               <ul className="px-4 py-4 text-xl font-medium text-gray-800">
-                {(answers || []).map((answer) => (
-                  <li className="my-1 flex items-start gap-2" key={answer}>
+                {(answers || []).map((answer, index) => (
+                  <li className="my-1 flex items-start gap-2" key={index}>
                     <span className="mt-0.5 text-primary-900">
                       <ArrowRight />
                     </span>

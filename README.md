@@ -24,7 +24,7 @@ At ending note, I would just like to say to anyone who feels this is really good
 
 * Framework: [Next.js](https://nextjs.org)
 * Styling: [TailwindCSS](https://tailwindcss.com)
-* Deployment: [Vercel](https://vercel.com)
+* Deployment: [Cloudflare Pages](https://pages.cloudflare.com/)
 
 # Bugs or Requests 🐛
 
