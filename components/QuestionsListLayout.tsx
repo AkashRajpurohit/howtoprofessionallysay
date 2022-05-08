@@ -6,6 +6,7 @@ import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
 import { ArrowDown, ArrowRight } from 'react-feather';
 import { swapFlowOfData } from 'lib/qna';
+import useLocalStorage from 'hooks/useLocalStorage';
 
 interface IQuestionsListLayoutProps {
   qnas: IQnA[];
@@ -43,7 +44,6 @@ const SearchInput: FunctionComponent<{
   );
 };
 
-// based on a toggle change the flow of data
 const FlowOfData: FunctionComponent<{
   flow: Flow;
   toggleFlow: () => void;
@@ -109,8 +109,10 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
   qnas,
 }): JSX.Element => {
   const [searchValue, setSearchValue] = useState('');
-  const [flow, setFlow] = useState<Flow>(Flow.A_TO_B);
+  const [flow, setFlow] = useLocalStorage<Flow>('flow', Flow.A_TO_B);
   const [questionsToDisplay, setQuestionsToDisplay] = useState(qnas);
+
+  if (!flow) return <></>;
 
   useEffect(() => {
     if (searchValue) {
