@@ -15,9 +15,9 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           (not really, try at your own risk)
         </small>
       </p>
-      <div className="flex flex-col gap-4 md:flex-row">
+      <div className="flex flex-col gap-6 md:flex-row">
         <a
-          href="https://github.com/AkashRajpurohit/howdoyouprofessionallysay"
+          href={siteMetadata.siteRepo}
           rel="nofollow noopener noreferrer"
           target="_blank"
           className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-4 px-5 py-3 font-medium text-indigo-600 shadow-2xl"
@@ -30,7 +30,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           <span className="relative text-white">⭐ Github</span>
         </a>
         <a
-          href="https://www.instagram.com/loewhaley/"
+          href={siteMetadata.loewhaley}
           rel="nofollow noopener noreferrer"
           target="_blank"
           className="group relative inline-flex items-center justify-center overflow-hidden rounded-md px-6 py-3 font-bold text-white shadow-2xl"
@@ -43,6 +43,34 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           <span className="absolute inset-0 h-full w-full rounded-md border border-white opacity-10"></span>
           <span className="absolute h-0 w-0 rounded-full bg-white opacity-5 transition-all duration-300 ease-out group-hover:h-56 group-hover:w-56"></span>
           <span className="relative">Follow @loewhaley</span>
+        </a>
+        <a
+          href={siteMetadata.siteBlogAt}
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-primary-500 p-4 px-6 py-3 font-medium text-indigo-600 shadow-md transition duration-300 ease-out"
+        >
+          <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-primary-500 text-white duration-300 group-hover:translate-x-0">
+            <svg
+              aria-hidden="true"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span className="ease absolute flex h-full w-full transform items-center justify-center text-white transition-all duration-300 group-hover:translate-x-full">
+            Read More
+          </span>
+          <span className="invisible relative">Read More</span>
         </a>
       </div>
       <p className="text-xs">

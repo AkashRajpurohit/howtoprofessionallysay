@@ -5,7 +5,9 @@
 
 A simple static website for common phrases we might want to say to your colleagues but want to make it sound more professional.
 
-The data for this is being collected from content created by _[@loewhaley](https://www.instagram.com/loewhaley/)_ on instagram. 
+The data for this is being collected from content created by _[@loewhaley](https://www.instagram.com/loewhaley/)_ on Instagram. 
+
+**Read more about the project [here](https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/)**
 
 # Disclaimer ❎
 Hello reader. If you are coming from [hackernews](https://news.ycombinator.com/item?id=31224996) or [reddit](https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/), firstly I want to thank you for sharing your thoughts and suggestions (if any). The intent of the project is not to make you respond in a passive aggressive tone but to show you some alternatives of **how you might feel like saying sometimes** over **how you can reframe it a bit better (in some cases atleast)**

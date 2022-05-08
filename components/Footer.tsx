@@ -1,3 +1,4 @@
+import siteMetadata from 'lib/sitemetadata';
 import React, { FunctionComponent } from 'react';
 
 interface IFooterProps {}
@@ -18,7 +19,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
       <p className="font-medium">
         Special thanks to{' '}
         <a
-          href="https://www.instagram.com/loewhaley/"
+          href={siteMetadata.loewhaley}
           rel="nofollow noopener noreferrer"
           className="text-gray-200 underline hover:text-gray-300"
         >
@@ -28,7 +29,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
       <p className="flex gap-3">
         <span>
           <a
-            href="https://github.com/AkashRajpurohit/howdoyouprofessionallysay"
+            href={siteMetadata.siteRepo}
             rel="nofollow noopener noreferrer"
             target="_blank"
             className="text-gray-200 underline hover:text-gray-300"

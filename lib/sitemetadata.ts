@@ -6,6 +6,9 @@ const siteMetadata = {
   siteUrl: 'https://howtoprofessionallysay.akashrajpurohit.com',
   siteRepo: 'https://github.com/AkashRajpurohit/howtoprofessionallysay',
   siteLogo: '/static/images/logo.png',
+  siteBlogAt:
+    'https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/?ref=howtoprofessionallysay',
+  loewhaley: 'https://www.instagram.com/loewhaley/',
   socialBanner: '/static/images/twitter-card.png',
   email: 'me@akashrajpurohit.com',
   github: 'https://github.com/AkashRajpurohit',
