@@ -51,7 +51,7 @@ const qna: IQnA[] = [
   {
     question: 'Stop bothering me',
     answer:
-      'You have not heard from me because further information is not available at this time, Once I have an update I’ll be sure to loop you in.',
+      'You have not heard from me because further information is not available at this time, once I have an update I’ll be sure to loop you in.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
@@ -65,12 +65,12 @@ const qna: IQnA[] = [
   {
     question: 'Do your job!',
     answer:
-      'It is my understanding that you are the appropriate person to contact in regards to this. But If there’s is someone better equipped for this let me know.',
+      'It is my understanding that you are the appropriate person to contact in regards to this. But if there’s is someone better equipped for this let me know.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
-    question: "That's not my job",
+    question: 'That’s not my job',
     answer:
       'This falls outside of my responsibilities but I would be happy to connect you with someone who can help.',
     alternativeAnswers: [],
@@ -87,7 +87,7 @@ const qna: IQnA[] = [
   {
     question: 'Answer my emails',
     answer:
-      'If there’s a better way to get in contact with you please let me know as I am hoping to have this resolved as soon as possible',
+      'If there’s a better way to get in contact with you please let me know as I am hoping to have this resolved as soon as possible.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
@@ -116,7 +116,7 @@ const qna: IQnA[] = [
   {
     question: 'Stop micromanaging',
     answer:
-      'I am confident in my ability to complete this project and will be sure to reach out, If or when I require your input.',
+      'I am confident in my ability to complete this project and will be sure to reach out, if or when I require your input.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
@@ -130,14 +130,14 @@ const qna: IQnA[] = [
   {
     question: 'Stay in your own lane',
     answer:
-      'Thank you for your input. I’ll keep that in mind as I move forward with decisions that fall within my responsibilities',
+      'Thank you for your input. I’ll keep that in mind as I move forward with decisions that fall within my responsibilities.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
     question: 'I’ve told you this multiple times',
     answer:
-      'There seems to be a disconnect here as this information has already been provided',
+      'There seems to be a disconnect here as this information has already been provided.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
@@ -149,9 +149,9 @@ const qna: IQnA[] = [
     flow: Flow.A_TO_B,
   },
   {
-    question: 'We do not need to have a meeting about this.',
+    question: 'We do not need to have a meeting about this',
     answer:
-      "Being respectful of everyone's time let's discuss this through email until we have a more defined agenda",
+      'Being respectful of everyone’s time let’s discuss this through email until we have a more defined agenda.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
@@ -179,40 +179,40 @@ const qna: IQnA[] = [
   {
     question: 'I am not paid enough to do this',
     answer:
-      'This falls out of my job description but if the opportunity for a role expansion becomes available I would be happy to discuss reworking my contract to better align with these new responsibilities',
+      'This falls out of my job description but if the opportunity for a role expansion becomes available I would be happy to discuss reworking my contract to better align with these new responsibilities.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
     question: 'I totally forgot about your email',
-    answer: 'Thank you for your patience',
+    answer: 'Thank you for your patience,',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
     question:
-      "I'm going to need a whole lot of more information if you want me to do this",
+      'I’m going to need a whole lot of more information if you want me to do this',
     answer:
-      'Please let me know when further details become available as I require more information to successfully complete this task',
+      'Please let me know when further details become available as I require more information to successfully complete this task.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
     question: 'Stop calling me before my workday even starts',
     answer:
-      "If you need to contact me, please note that my working hours being at 8 am and 6 pm. Communications received prior to this won't be seen.",
+      'If you need to contact me, please note that my working hours being at 8 am and 6 pm. Communications received prior to this won’t be seen.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
     question: 'Check your inbox, I already sent this to you!',
     answer:
-      'I previously sent you an email regarding that but please let me know if something went wrong in transit',
+      'I previously sent you an email regarding that but please let me know if something went wrong in transit.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
   {
-    question: "I couldn't care less",
+    question: 'I couldn’t care less',
     answer:
       'I will defer to your judgment on this as I am not passionate either way and I trust your expertise.',
     alternativeAnswers: [],
@@ -228,7 +228,7 @@ const qna: IQnA[] = [
   {
     question: 'Stop trying to make me do your work!',
     answer:
-      'I am not able to offer you additional support in completing your workload',
+      'I am not able to offer you additional support in completing your workload.',
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
