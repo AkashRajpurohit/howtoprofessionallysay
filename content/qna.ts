@@ -232,6 +232,27 @@ const qna: IQnA[] = [
     alternativeAnswers: [],
     flow: Flow.A_TO_B,
   },
+  {
+    question: 'Try problem solving on your own before you come to me',
+    answer:
+      'I encourage you to brainstorm possible solutions prior to looping me in for additional support.',
+    alternativeAnswers: [],
+    flow: Flow.A_TO_B,
+  },
+  {
+    question: 'Can you do you job so I don’t have to?',
+    answer:
+        'Please let me know when your deliverables have been completed.',
+    alternativeAnswers: [],
+    flow: Flow.A_TO_B,
+  },
+  {
+    question: 'If further changes are required do them yourself.',
+    answer:
+        'If further edits are required, I have attached a version of the document that you can apply your edits directly into.',
+    alternativeAnswers: [],
+    flow: Flow.A_TO_B,
+  },
 ];
 
 export default qna;
