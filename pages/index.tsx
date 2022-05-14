@@ -1,10 +1,15 @@
 import Container from 'components/Container';
-import QuestionsListLayout from 'components/QuestionsListLayout';
 import { PageSEO } from 'components/SEO';
 import { getQnAs } from 'lib/qna';
 import siteMetadata from 'lib/sitemetadata';
 import { IQnA } from 'lib/types';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import dynamic from 'next/dynamic';
+
+const QuestionsListLayout = dynamic(
+  () => import('components/QuestionsListLayout'),
+  { ssr: false, loading: () => <p>Loading...</p> }
+);
 
 const Home = ({ qnas }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
