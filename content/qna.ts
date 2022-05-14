@@ -240,7 +240,7 @@ const qna: IQnA[] = [
     flow: Flow.A_TO_B,
   },
   {
-    question: 'Can you do you job so I don’t have to?',
+    question: 'Can you do your job so I don’t have to?',
     answer:
         'Please let me know when your deliverables have been completed.',
     alternativeAnswers: [],
