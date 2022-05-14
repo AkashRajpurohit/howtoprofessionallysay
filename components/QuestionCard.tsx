@@ -5,14 +5,16 @@ import { ArrowRight, ArrowUp } from 'react-feather';
 
 interface IQuestionCardProps {
   qna: IQnA;
+  flow: Flow;
 }
 
 const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
   qna,
+  flow,
 }): JSX.Element => {
-  const question = qna.flow === Flow.A_TO_B ? qna.question : qna.answer;
+  const question = flow === Flow.A_TO_B ? qna.question : qna.answer;
   const answers =
-    qna.flow === Flow.A_TO_B
+    flow === Flow.A_TO_B
       ? [qna.answer, ...(qna.alternativeAnswers || [])]
       : [qna.question];
 

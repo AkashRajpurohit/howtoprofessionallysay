@@ -5,7 +5,7 @@ import QuestionCard from './QuestionCard';
 import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
 import { ArrowDown, ArrowRight } from 'react-feather';
-import { swapFlowOfData } from 'lib/qna';
+import useLocalStorage from 'hooks/useLocalStorage';
 
 interface IQuestionsListLayoutProps {
   qnas: IQnA[];
@@ -43,7 +43,6 @@ const SearchInput: FunctionComponent<{
   );
 };
 
-// based on a toggle change the flow of data
 const FlowOfData: FunctionComponent<{
   flow: Flow;
   toggleFlow: () => void;
@@ -81,25 +80,23 @@ const FlowOfData: FunctionComponent<{
           </p>
         )}
       </div>
-      <div>
-        <Switch.Group as="div" className="flex items-center justify-between">
-          <Switch
-            checked={enabled}
-            onChange={toggleFlow}
+      <div className="flex items-center justify-between">
+        <Switch
+          checked={enabled}
+          onChange={toggleFlow}
+          className={clsx(
+            enabled ? 'bg-primary-600' : 'bg-gray-200',
+            'focus:ring-primary relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2'
+          )}
+        >
+          <span
+            aria-hidden="true"
             className={clsx(
-              enabled ? 'bg-primary-600' : 'bg-gray-200',
-              'focus:ring-primary relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2'
+              enabled ? 'translate-x-5' : 'translate-x-0',
+              'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
             )}
-          >
-            <span
-              aria-hidden="true"
-              className={clsx(
-                enabled ? 'translate-x-5' : 'translate-x-0',
-                'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out'
-              )}
-            />
-          </Switch>
-        </Switch.Group>
+          />
+        </Switch>
       </div>
     </div>
   );
@@ -109,8 +106,10 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
   qnas,
 }): JSX.Element => {
   const [searchValue, setSearchValue] = useState('');
-  const [flow, setFlow] = useState<Flow>(Flow.A_TO_B);
+  const [flow, setFlow] = useLocalStorage<Flow>('flow', Flow.A_TO_B);
   const [questionsToDisplay, setQuestionsToDisplay] = useState(qnas);
+
+  if (!flow) return <>Loading...</>;
 
   useEffect(() => {
     if (searchValue) {
@@ -122,11 +121,6 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
       setQuestionsToDisplay(qnas);
     }
   }, [searchValue]);
-
-  useEffect(() => {
-    const updatedQnAs = swapFlowOfData(questionsToDisplay, flow);
-    setQuestionsToDisplay(updatedQnAs);
-  }, [flow]);
 
   const toggleFlow = () => {
     if (flow === Flow.A_TO_B) {
@@ -144,7 +138,7 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
         {!questionsToDisplay.length && <li>No questions found</li>}
         {questionsToDisplay.map((qna) => (
           <li key={qna.question}>
-            <QuestionCard qna={qna} />
+            <QuestionCard qna={qna} flow={flow} />
           </li>
         ))}
       </ul>
