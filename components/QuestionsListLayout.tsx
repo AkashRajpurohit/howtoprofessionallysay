@@ -126,7 +126,7 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
   useEffect(() => {
     const updatedQnAs = swapFlowOfData(questionsToDisplay, flow);
     setQuestionsToDisplay(updatedQnAs);
-  }, [flow]);
+  }, [flow, searchValue]);
 
   const toggleFlow = () => {
     if (flow === Flow.A_TO_B) {
