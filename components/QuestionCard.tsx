@@ -1,4 +1,4 @@
-import { Disclosure } from '@headlessui/react';
+import { Disclosure, Transition } from '@headlessui/react';
 import { Flow, IQnA } from 'lib/types';
 import React, { FunctionComponent } from 'react';
 import { ArrowRight, ArrowUp } from 'react-feather';
@@ -35,18 +35,27 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
                 />
               </span>
             </Disclosure.Button>
-            <Disclosure.Panel className="bg-primary-200">
-              <ul className="px-4 py-4 text-xl font-medium text-gray-800">
-                {(answers || []).map((answer, index) => (
-                  <li className="my-1 flex items-start gap-2" key={index}>
-                    <span className="mt-0.5 text-primary-900">
-                      <ArrowRight />
-                    </span>
-                    <div>{answer}</div>
-                  </li>
-                ))}
-              </ul>
-            </Disclosure.Panel>
+            <Transition
+              enter="transition duration-200 ease-out"
+              enterFrom="transform -translate-x-10 opacity-0"
+              enterTo="transform translate-x-0 opacity-100"
+              leave="transition duration-200 ease-out"
+              leaveFrom="transform translate-x-0 opacity-100"
+              leaveTo="transform translate-x-10 opacity-0"
+            >
+              <Disclosure.Panel className="bg-primary-200">
+                <ul className="px-4 py-4 text-xl font-medium text-gray-800">
+                  {(answers || []).map((answer, index) => (
+                    <li className="my-1 flex items-start gap-2" key={index}>
+                      <span className="mt-0.5 text-primary-900">
+                        <ArrowRight />
+                      </span>
+                      <div>{answer}</div>
+                    </li>
+                  ))}
+                </ul>
+              </Disclosure.Panel>
+            </Transition>
           </div>
         )}
       </Disclosure>
