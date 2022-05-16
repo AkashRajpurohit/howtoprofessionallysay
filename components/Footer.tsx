@@ -1,3 +1,4 @@
+import { trackOutboundLink } from 'lib/analytics';
 import siteMetadata from 'lib/sitemetadata';
 import React, { FunctionComponent } from 'react';
 
@@ -11,6 +12,11 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
         <a
           href="https://akashrajpurohit.com?ref=howtoprofessionallysay"
           rel="nofollow noopener noreferrer"
+          onClick={() =>
+            trackOutboundLink(
+              'https://akashrajpurohit.com?ref=howtoprofessionallysay'
+            )
+          }
           className="text-gray-200 underline hover:text-gray-300"
         >
           Akash Rajpurohit
@@ -21,6 +27,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
         <a
           href={siteMetadata.loewhaley}
           rel="nofollow noopener noreferrer"
+          onClick={() => trackOutboundLink(siteMetadata.siteRepo)}
           className="text-gray-200 underline hover:text-gray-300"
         >
           @loewhaley
@@ -32,6 +39,7 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
             href={siteMetadata.siteRepo}
             rel="nofollow noopener noreferrer"
             target="_blank"
+            onClick={() => trackOutboundLink(siteMetadata.siteRepo)}
             className="text-gray-200 underline hover:text-gray-300"
           >
             Github

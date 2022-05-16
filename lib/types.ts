@@ -8,3 +8,10 @@ export interface IQnA {
   answer: string;
   alternativeAnswers?: string[];
 }
+
+export interface UmamiWindow extends Window {
+  umami: {
+    trackEvent: (event_value: string, event_type: string) => void;
+    trackView: (url: string) => void;
+  };
+}

@@ -1,3 +1,4 @@
+import { trackOutboundLink } from 'lib/analytics';
 import siteMetadata from 'lib/sitemetadata';
 import React, { FunctionComponent } from 'react';
 
@@ -20,6 +21,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           href={siteMetadata.siteRepo}
           rel="nofollow noopener noreferrer"
           target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.siteRepo)}
           className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-4 px-5 py-3 font-medium text-indigo-600 shadow-2xl"
         >
           <span className="ease absolute top-0 left-0 -mt-10 -ml-3 h-40 w-40 rounded-full bg-red-500 blur-md transition-all duration-700"></span>
@@ -33,6 +35,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           href={siteMetadata.loewhaley}
           rel="nofollow noopener noreferrer"
           target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.loewhaley)}
           className="group relative inline-flex items-center justify-center overflow-hidden rounded-md px-6 py-3 font-bold text-white shadow-2xl"
         >
           <span className="absolute inset-0 h-full w-full bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 opacity-0 transition duration-300 ease-out group-hover:opacity-100"></span>
@@ -48,6 +51,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           href={siteMetadata.supportUrl}
           rel="nofollow noopener noreferrer"
           target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.supportUrl)}
           className="group relative inline-block text-lg"
         >
           <span className="relative z-10 block overflow-hidden rounded-lg border-2 border-gray-900 px-5 py-3 font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out group-hover:text-white">
@@ -64,6 +68,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
           href={siteMetadata.siteBlogAt}
           rel="nofollow noopener noreferrer"
           target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.siteBlogAt)}
           className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-primary-500 p-4 px-6 py-3 font-medium text-indigo-600 shadow-md transition duration-300 ease-out"
         >
           <span className="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-primary-500 text-white duration-300 group-hover:translate-x-0">
