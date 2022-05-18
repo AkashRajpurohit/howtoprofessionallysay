@@ -20,7 +20,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
 
   return (
     <div className="w-full">
-      <Disclosure>
+      <Disclosure defaultOpen={true}>
         {({ open }) => (
           <div className="my-2">
             <Disclosure.Button className="flex w-full items-center justify-between gap-2 bg-primary-100 px-4 py-6 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
