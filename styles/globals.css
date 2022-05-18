@@ -41,3 +41,32 @@
   font-display: swap;
   src: url(/fonts/Inter/Inter-Bold.ttf) format('opentype');
 }
+
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  @apply w-full;
+}
+
+#carbonads > span {
+  @apply relative block w-full rounded-md bg-gray-700 p-3;
+  box-shadow: 0 0 1px 1px hsla(0, 0%, 0%, 0.05),
+    0 0 2px 2px hsla(0, 0%, 0%, 0.05), 0 0 4px 4px hsla(0, 0%, 0%, 0.05);
+}
+
+#carbonads .carbon-wrap {
+  @apply flex;
+}
+
+#carbonads .carbon-img {
+  @apply mr-3 rounded-md;
+}
+
+#carbonads .carbon-text {
+  @apply mb-3 text-xs leading-6 text-gray-100 md:text-sm xl:text-lg;
+}
+
+#carbonads .carbon-poweredby {
+  @apply absolute bottom-0 right-0 flex justify-end p-2 text-xs font-medium uppercase tracking-wider text-gray-200 lg:p-4 lg:font-semibold;
+}
