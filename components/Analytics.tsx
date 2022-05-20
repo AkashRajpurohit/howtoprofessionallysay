@@ -1,3 +1,4 @@
+import { isProduction } from 'lib/utils';
 import Script from 'next/script';
 
 const Umami = () => {
@@ -13,8 +14,6 @@ const Umami = () => {
     </>
   );
 };
-
-const isProduction = process.env.NODE_ENV === 'production';
 
 const Analytics = () => {
   return <>{isProduction && <Umami />}</>;
