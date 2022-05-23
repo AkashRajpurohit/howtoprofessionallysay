@@ -16,7 +16,7 @@ const Ad = () => {
     }
   }, []);
 
-  return <div ref={reference} />;
+  return <div ref={reference} className="print:hidden" />;
 };
 
 export default Ad;

@@ -27,7 +27,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
               <h3 className="text-xl font-bold leading-9 tracking-tight xl:text-2xl">
                 {question}
               </h3>
-              <span className="h-6 w-6">
+              <span className="h-6 w-6 print:hidden">
                 <ArrowUp
                   className={`${
                     open ? 'rotate-180 transform' : ''

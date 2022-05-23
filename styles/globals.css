@@ -70,3 +70,12 @@
 #carbonads .carbon-poweredby {
   @apply absolute bottom-0 right-0 flex justify-end p-2 text-xs font-medium uppercase tracking-wider text-gray-200 lg:p-4 lg:font-semibold;
 }
+
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 1.6cm;
+  }
+}

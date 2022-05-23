@@ -1,5 +1,4 @@
 import { isBrowser, noop } from 'lib/utils';
-import { options } from 'preact';
 import {
   Dispatch,
   SetStateAction,

@@ -4,7 +4,7 @@ import { matchSorter } from 'match-sorter';
 import QuestionCard from './QuestionCard';
 import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
-import { ArrowDown, ArrowRight } from 'react-feather';
+import { ArrowDown, ArrowRight, Printer } from 'react-feather';
 import useLocalStorage from 'hooks/useLocalStorage';
 
 interface IQuestionsListLayoutProps {
@@ -49,7 +49,7 @@ const FlowOfData: FunctionComponent<{
 }> = ({ flow, toggleFlow }) => {
   const enabled = flow === Flow.B_TO_A;
   return (
-    <div className="mb-4 flex items-center justify-between">
+    <div className="mb-4 flex items-center justify-between print:hidden">
       <div className="flex flex-col gap-2">
         <p className="text-lg font-bold">Current flow of data</p>
         {enabled ? (
@@ -130,10 +130,28 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
     }
   };
 
+  const printPDF = () => {
+    window.print();
+  };
+
   return (
     <div>
       <FlowOfData flow={flow} toggleFlow={toggleFlow} />
-      <SearchInput setSearchValue={setSearchValue} />
+      <div className="flex items-center gap-3 print:hidden">
+        <div className="flex-grow">
+          <SearchInput setSearchValue={setSearchValue} />
+        </div>
+        <div className="flex items-center rounded-md bg-gray-700 p-2">
+          <button
+            aria-label="Print the page as PDF"
+            className="text-primary-500"
+            title="Print the page as PDF"
+            onClick={printPDF}
+          >
+            <Printer size={24} />
+          </button>
+        </div>
+      </div>
       <ul className="mt-4 flex flex-col gap-3">
         {!questionsToDisplay.length && <li>No questions found</li>}
         {questionsToDisplay.map((qna) => (
