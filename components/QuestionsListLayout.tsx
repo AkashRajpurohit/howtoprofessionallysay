@@ -6,6 +6,7 @@ import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
 import { ArrowDown, ArrowRight, Printer } from 'react-feather';
 import useLocalStorage from 'hooks/useLocalStorage';
+import { trackEvent } from 'lib/analytics';
 
 interface IQuestionsListLayoutProps {
   qnas: IQnA[];
@@ -131,6 +132,7 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
   };
 
   const printPDF = () => {
+    trackEvent({ type: 'Click', value: 'Print PDF' });
     window.print();
   };
 
