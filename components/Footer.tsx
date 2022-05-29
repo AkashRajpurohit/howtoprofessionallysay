@@ -1,7 +1,6 @@
 import { trackOutboundLink } from 'lib/analytics';
 import siteMetadata from 'lib/sitemetadata';
 import React, { FunctionComponent } from 'react';
-import Link from 'next/link';
 
 interface IFooterProps {}
 
@@ -36,9 +35,9 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
       </p>
       <p className="flex gap-3">
         <span className="print:hidden">
-          <Link href="/">
-            <a className="text-gray-200 underline hover:text-gray-300">Home</a>
-          </Link>
+          <a href="/" className="text-gray-200 underline hover:text-gray-300">
+            Home
+          </a>
         </span>
         <span>
           <a
@@ -52,11 +51,12 @@ const Footer: FunctionComponent<IFooterProps> = (): JSX.Element => {
           </a>
         </span>
         <span className="print:hidden">
-          <Link href="/terms-of-service">
-            <a className="text-gray-200 underline hover:text-gray-300">
-              Terms of Service
-            </a>
-          </Link>
+          <a
+            href="/terms-of-service"
+            className="text-gray-200 underline hover:text-gray-300"
+          >
+            Terms of Service
+          </a>
         </span>
       </p>
     </footer>
