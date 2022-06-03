@@ -97,7 +97,21 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
       <p className="text-xs">
         PS: I am looking for additional data sources and make it more
         appropriate for most people. <br /> If you are looking to contribute
-        then please reach out to me at {siteMetadata.email}
+        then please reach out to me at {siteMetadata.email}. <br />
+        For translation support read more details{' '}
+        <a
+          href="https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/15"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          className="text-teal-400 underline"
+          onClick={() =>
+            trackOutboundLink(
+              'https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/15'
+            )
+          }
+        >
+          here
+        </a>
       </p>
     </header>
   );
