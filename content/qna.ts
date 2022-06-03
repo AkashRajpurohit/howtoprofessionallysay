@@ -2,6 +2,11 @@ import { IQnA } from 'lib/types';
 
 const qna: IQnA[] = [
   {
+    question: 'Get a f@#k out!',
+    answer:
+      'I’d like you to feel an excitement for upcoming trip.',
+    alternativeAnswers: [],
+  }, {
     question: 'You are overcomplicating this',
     answer:
       'Being mindful of timelines. Let’s concentrate on the initial scope.',
