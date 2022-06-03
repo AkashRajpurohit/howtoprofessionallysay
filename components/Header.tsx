@@ -29,7 +29,7 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
             <span className="absolute bottom-0 left-0 -ml-10 h-24 w-24 rounded-full bg-purple-500 blur-md"></span>
             <span className="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-pink-500 blur-md"></span>
           </span>
-          <span className="relative text-white">⭐ Github</span>
+          <span className="relative text-white">Github ⭐</span>
         </a>
         <a
           href={siteMetadata.loewhaley}
@@ -92,6 +92,22 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
             Read More
           </span>
           <span className="invisible relative">Read More</span>
+        </a>
+        <a
+          href={siteMetadata.newsletter}
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.newsletter)}
+          className="group relative overflow-hidden rounded-lg border border-gray-100 bg-gray-100 px-5 py-3 font-medium text-gray-600 shadow-inner"
+        >
+          <span className="ease absolute top-0 left-0 h-0 w-0 border-t-2 border-gray-600 transition-all duration-200 group-hover:w-full"></span>
+          <span className="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-gray-600 transition-all duration-200 group-hover:w-full"></span>
+          <span className="ease absolute top-0 left-0 h-0 w-full bg-gray-600 transition-all delay-200 duration-300 group-hover:h-full"></span>
+          <span className="ease absolute bottom-0 left-0 h-0 w-full bg-gray-600 transition-all delay-200 duration-300 group-hover:h-full"></span>
+          <span className="absolute inset-0 h-full w-full bg-gray-900 opacity-0 delay-300 duration-300 group-hover:opacity-100"></span>
+          <span className="ease relative transition-colors delay-200 duration-300 group-hover:text-white">
+            Newsletter ✉️
+          </span>
         </a>
       </div>
       <p className="text-xs">

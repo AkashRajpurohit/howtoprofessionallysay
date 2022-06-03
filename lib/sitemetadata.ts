@@ -14,6 +14,7 @@ const siteMetadata = {
   email: 'me@akashrajpurohit.com',
   github: 'https://github.com/AkashRajpurohit',
   twitter: 'https://twitter.com/AkashWhoCodes',
+  newsletter: 'https://newsletter.akashrajpurohit.com',
   carbonCode: 'CEAIC23N',
   carbonPlacement: 'akashrajpurohitcom',
 };
