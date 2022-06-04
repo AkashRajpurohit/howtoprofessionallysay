@@ -1,26 +1,22 @@
-import { Flow, IQnA } from 'lib/types';
-import React, { FunctionComponent, useEffect, useState } from 'react';
-import { matchSorter } from 'match-sorter';
+import { Flow } from 'lib/types';
+import React, { FunctionComponent } from 'react';
 import QuestionCard from './QuestionCard';
 import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
 import { ArrowDown, ArrowRight, Printer } from 'react-feather';
-import useLocalStorage from 'hooks/useLocalStorage';
 import { trackEvent } from 'lib/analytics';
+import useStore from 'store/app';
 
-interface IQuestionsListLayoutProps {
-  qnas: IQnA[];
-}
+const SearchInput: FunctionComponent = () => {
+  const { setSearchValue, searchValue } = useStore();
 
-const SearchInput: FunctionComponent<{
-  setSearchValue: React.Dispatch<React.SetStateAction<string>>;
-}> = ({ setSearchValue }) => {
   return (
     <div className="relative block">
       <span className="sr-only">Search</span>
       <input
         aria-label="What are you looking for?"
         type="text"
+        value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
         placeholder="What are you looking for?"
         className="block w-full rounded-md border border-gray-600 bg-gray-700 py-2 pr-3 shadow-sm placeholder:italic placeholder:text-gray-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm"
@@ -44,11 +40,10 @@ const SearchInput: FunctionComponent<{
   );
 };
 
-const FlowOfData: FunctionComponent<{
-  flow: Flow;
-  toggleFlow: () => void;
-}> = ({ flow, toggleFlow }) => {
+const FlowOfData: FunctionComponent = () => {
+  const { flow, toggleFlow } = useStore();
   const enabled = flow === Flow.B_TO_A;
+
   return (
     <div className="mb-4 flex items-center justify-between print:hidden">
       <div className="flex flex-col gap-2">
@@ -103,33 +98,8 @@ const FlowOfData: FunctionComponent<{
   );
 };
 
-const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
-  qnas,
-}): JSX.Element => {
-  const [searchValue, setSearchValue] = useState('');
-  const [flow, setFlow] = useLocalStorage<Flow>('flow', Flow.A_TO_B);
-  const [questionsToDisplay, setQuestionsToDisplay] = useState(qnas);
-
-  if (!flow) return <>Loading...</>;
-
-  useEffect(() => {
-    if (searchValue) {
-      const filteredQuestions = matchSorter(qnas, searchValue, {
-        keys: ['question', 'answer', 'alternativeAnswers'],
-      });
-      setQuestionsToDisplay(filteredQuestions);
-    } else {
-      setQuestionsToDisplay(qnas);
-    }
-  }, [searchValue]);
-
-  const toggleFlow = () => {
-    if (flow === Flow.A_TO_B) {
-      setFlow(Flow.B_TO_A);
-    } else {
-      setFlow(Flow.A_TO_B);
-    }
-  };
+const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
+  const { questionsToDisplay } = useStore();
 
   const printPDF = () => {
     trackEvent({ type: 'Click', value: 'Print PDF' });
@@ -138,10 +108,10 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
 
   return (
     <div>
-      <FlowOfData flow={flow} toggleFlow={toggleFlow} />
+      <FlowOfData />
       <div className="flex items-center gap-3 print:hidden">
         <div className="flex-grow">
-          <SearchInput setSearchValue={setSearchValue} />
+          <SearchInput />
         </div>
         <div className="flex items-center rounded-md bg-gray-700 p-2">
           <button
@@ -158,7 +128,7 @@ const QuestionsListLayout: FunctionComponent<IQuestionsListLayoutProps> = ({
         {!questionsToDisplay.length && <li>No questions found</li>}
         {questionsToDisplay.map((qna) => (
           <li key={qna.question}>
-            <QuestionCard qna={qna} flow={flow} />
+            <QuestionCard qna={qna} />
           </li>
         ))}
       </ul>
