@@ -216,6 +216,24 @@ const qna: IQnA[] = [
       'If further edits are required, I have attached a version of the document that you can apply your edits directly into.',
     alternativeAnswers: [],
   },
+  {
+    question: 'You should be the one doing this, not me.',
+    answer:
+      'It is my understanding that this is your responsibility. If that is not the case please let me know.',
+    alternativeAnswers: [],
+  },
+  {
+    question: 'I don’t need to be included on this.',
+    answer:
+      'I do not feel as though I am able to add any value to this conversation. Please remove me from this thread and feel free to loop me back in in the future should my involvement be required.',
+    alternativeAnswers: [],
+  },
+  {
+    question: 'I can’t read your mind. Be more clear on what you want.',
+    answer:
+      'In order to successfully complete this I will need further details on what is required.',
+    alternativeAnswers: [],
+  },
 ];
 
 export default qna;
