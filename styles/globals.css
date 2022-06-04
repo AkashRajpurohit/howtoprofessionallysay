@@ -64,7 +64,7 @@
 }
 
 #carbonads .carbon-text {
-  @apply mb-3 text-xs leading-6 text-gray-100 md:text-sm xl:text-lg;
+  @apply mb-3 text-xs leading-6 text-gray-100 md:text-sm;
 }
 
 #carbonads .carbon-poweredby {
