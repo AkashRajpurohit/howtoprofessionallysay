@@ -12,7 +12,7 @@ const LayoutWrapper: FunctionComponent<ILayoutWrapperProps> = ({
     <div>
       <Header />
       <div className="mx-auto flex min-h-[50vh] max-w-2xl justify-between px-4 xl:max-w-3xl xl:px-0 2xl:max-w-5xl">
-        <main className="mb-auto">
+        <main className="mb-auto w-full">
           <div className="h-20 w-full py-6 print:h-0 print:py-0">
             <Ad />
           </div>

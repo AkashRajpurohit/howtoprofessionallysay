@@ -2,16 +2,16 @@ import { Disclosure, Transition } from '@headlessui/react';
 import { Flow, IQnA } from 'lib/types';
 import React, { FunctionComponent } from 'react';
 import { ArrowRight, ArrowUp } from 'react-feather';
+import useStore from 'store/app';
 
 interface IQuestionCardProps {
   qna: IQnA;
-  flow: Flow;
 }
 
 const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
   qna,
-  flow,
 }): JSX.Element => {
+  const { flow } = useStore();
   const question = flow === Flow.A_TO_B ? qna.question : qna.answer;
   const answers =
     flow === Flow.A_TO_B
