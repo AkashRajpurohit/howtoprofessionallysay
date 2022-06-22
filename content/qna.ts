@@ -234,6 +234,30 @@ const qna: IQnA[] = [
       'In order to successfully complete this I will need further details on what is required.',
     alternativeAnswers: [],
   },
+  {
+    question: 'Does taking on all this extra work come with extra pay?',
+    answer:
+        'With my role expanding is there a plan to review my title and compensation to better reflect these additional responsibilities?',
+    alternativeAnswers: [],
+  },
+  {
+    question: 'Stop promising unrealistic timelines.',
+    answer:
+        'Can you walk me through your thinking on these timelines? I have some hesitations with the dates shared.',
+    alternativeAnswers: [],
+  },
+  {
+    question: 'I’ve not been properly trained on this',
+    answer:
+        'Is training available in order for me to successfully complete this?',
+    alternativeAnswers: [],
+  },
+  {
+    question: 'If you have me scheduled in meetings all day, when do you expect me to get this work done?',
+    answer:
+        'My calendar is currently heavily scheduled with meetings. To ensure appropriate time is available to get this done I can sit out of lower priority meetings this week or extend the deadline on this project. Please let me know which is preferred?',
+    alternativeAnswers: [],
+  },
 ];
 
 export default qna;
