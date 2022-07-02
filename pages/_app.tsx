@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import LayoutWrapper from 'components/LayoutWrapper';
 import React from 'react';
 import Head from 'next/head';
 import Analytics from 'components/Analytics';
+import Container from 'components/Container';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,9 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Analytics />
-      <LayoutWrapper>
+      <Container>
         <Component {...pageProps} />
-      </LayoutWrapper>
+      </Container>
     </React.Fragment>
   );
 }

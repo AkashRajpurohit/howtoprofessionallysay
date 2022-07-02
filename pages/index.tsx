@@ -1,4 +1,4 @@
-import Container from 'components/Container';
+import LayoutWrapper from 'components/LayoutWrapper';
 import { PageSEO } from 'components/SEO';
 import siteMetadata from 'lib/sitemetadata';
 import dynamic from 'next/dynamic';
@@ -15,9 +15,9 @@ const Home = () => {
         title={siteMetadata.title}
         description={siteMetadata.description}
       />
-      <Container>
+      <LayoutWrapper>
         <QuestionsListLayout />
-      </Container>
+      </LayoutWrapper>
     </>
   );
 };
