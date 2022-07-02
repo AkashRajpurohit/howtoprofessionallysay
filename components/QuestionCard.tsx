@@ -24,7 +24,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
         {({ open }) => (
           <div className="my-2">
             <Disclosure.Button className="flex w-full items-center justify-between gap-2 bg-primary-100 px-4 py-6 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
-              <h3 className="text-xl font-bold leading-9 tracking-tight xl:text-2xl">
+              <h3 className="select-all text-xl font-bold leading-9 tracking-tight xl:text-2xl">
                 {question}
               </h3>
               <span className="h-6 w-6 print:hidden">
@@ -50,7 +50,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
                       <span className="mt-0.5 text-primary-900">
                         <ArrowRight />
                       </span>
-                      <div>{answer}</div>
+                      <div className="select-all">{answer}</div>
                     </li>
                   ))}
                 </ul>
