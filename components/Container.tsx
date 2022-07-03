@@ -8,7 +8,7 @@ const Container: FunctionComponent<IContainerProps> = ({
   children,
 }): JSX.Element => {
   return (
-    <div className="px-2">
+    <div>
       <Header />
       {children}
       <Footer />

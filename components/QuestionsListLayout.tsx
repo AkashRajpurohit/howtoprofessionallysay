@@ -124,10 +124,10 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
           </button>
         </div>
       </div>
-      <ul className="mt-4 flex flex-col gap-3">
+      <ul role="list" className="divide-y-2 divide-gray-500">
         {!questionsToDisplay.length && <li>No questions found</li>}
         {questionsToDisplay.map((qna) => (
-          <li key={qna.question}>
+          <li key={qna.id} className="py-6">
             <QuestionCard qna={qna} />
           </li>
         ))}
