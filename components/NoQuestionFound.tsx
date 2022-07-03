@@ -1,12 +1,16 @@
 import React, { FunctionComponent } from 'react';
-import Image from 'next/image';
-import NotFoundSvg from 'public/static/images/not-found.svg';
+import Image from './Image';
 
 const NoQuestionFound: FunctionComponent = (): JSX.Element => {
   return (
     <div className="mt-4 flex flex-col items-center justify-center">
       <p>No data found with this search text.</p>
-      <Image src={NotFoundSvg} width={250} height={300} alt="data not found" />
+      <Image
+        src={'/static/images/not-found.svg'}
+        width={250}
+        height={300}
+        alt="data not found"
+      />
       <p>
         Want to add it? Head{' '}
         <a
