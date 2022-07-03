@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { ArrowDown, ArrowRight, Printer } from 'react-feather';
 import { trackEvent } from 'lib/analytics';
 import useStore from 'store/app';
+import NoQuestionFound from './NoQuestionFound';
 
 const SearchInput: FunctionComponent = () => {
   const { setSearchValue, searchValue } = useStore();
@@ -125,7 +126,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
         </div>
       </div>
       <ul role="list" className="divide-y-2 divide-gray-500">
-        {!questionsToDisplay.length && <li>No questions found</li>}
+        {!questionsToDisplay.length && <NoQuestionFound />}
         {questionsToDisplay.map((qna) => (
           <li key={qna.id} className="py-6">
             <QuestionCard qna={qna} />
