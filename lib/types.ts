@@ -4,6 +4,7 @@ export enum Flow {
 }
 
 export interface IQnA {
+  id: string | number;
   question: string;
   answer: string;
   alternativeAnswers?: string[];
