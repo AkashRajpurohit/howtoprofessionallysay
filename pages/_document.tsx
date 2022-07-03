@@ -7,13 +7,6 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/Dancing_Script/DancingScript-Regular.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
             href="/fonts/Dancing_Script/DancingScript-Medium.ttf"
             as="font"
             type="font/ttf"
