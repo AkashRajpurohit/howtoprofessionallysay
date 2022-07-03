@@ -1,12 +1,7 @@
 import LayoutWrapper from 'components/LayoutWrapper';
 import { PageSEO } from 'components/SEO';
 import siteMetadata from 'lib/sitemetadata';
-import dynamic from 'next/dynamic';
-
-const QuestionsListLayout = dynamic(
-  () => import('components/QuestionsListLayout'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-);
+import QuestionsListLayout from 'components/QuestionsListLayout';
 
 const Home = () => {
   return (
