@@ -42,7 +42,7 @@
 }
 
 #carbonads > span {
-  @apply relative block w-full rounded-md bg-gray-700 p-3;
+  @apply relative block w-full rounded-md border-2 border-gray-700 bg-gray-800 p-3;
   box-shadow: 0 0 1px 1px hsla(0, 0%, 0%, 0.05),
     0 0 2px 2px hsla(0, 0%, 0%, 0.05), 0 0 4px 4px hsla(0, 0%, 0%, 0.05);
 }
@@ -56,11 +56,11 @@
 }
 
 #carbonads .carbon-text {
-  @apply mb-3 text-xs leading-6 text-gray-100 md:text-sm;
+  @apply mb-3 text-sm leading-4 text-gray-100 lg:text-xs;
 }
 
 #carbonads .carbon-poweredby {
-  @apply absolute bottom-0 right-0 flex justify-end p-2 text-[8px] font-medium uppercase tracking-wider text-gray-200 lg:p-4 lg:font-semibold;
+  @apply absolute bottom-0 right-0 flex justify-end p-2 text-[8px] font-semibold uppercase tracking-tight text-gray-200;
 }
 
 @media print {
