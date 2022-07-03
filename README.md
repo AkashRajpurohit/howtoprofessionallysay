@@ -1,6 +1,8 @@
 ![how-to-professionally-say](/public/static/images/twitter-card.png)
 # How to professionally say
 
+<a href="https://www.producthunt.com/posts/how-to-professionally-say?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-how&#0045;to&#0045;professionally&#0045;say" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=351395&theme=light" alt="How&#0032;to&#0032;professionally&#0032;say - A&#0032;guide&#0032;for&#0032;your&#0032;daily&#0032;&#0034;professional&#0034;&#0032;interactions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 > A guide for your daily professional interactions.
 
 A simple static website for common phrases we might want to say to your colleagues but want to make it sound more professional.
