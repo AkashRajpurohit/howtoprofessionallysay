@@ -4,7 +4,7 @@ import Share from './Share';
 
 const Sidebar: FunctionComponent = (): JSX.Element => {
   return (
-    <div className="lg:space-y-6">
+    <div className="space-y-6">
       <div className="hidden lg:block">
         <Share />
       </div>
