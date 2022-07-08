@@ -7,30 +7,30 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/Dancing_Script/DancingScript-Medium.ttf"
+            href="/fonts/Dancing_Script/DancingScript-Medium.woff2"
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/Inter/Inter-Regular.ttf"
+            href="/fonts/Inter/Inter-Regular-subset.woff2"
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/Inter/Inter-Medium.ttf"
+            href="/fonts/Inter/Inter-Medium-subset.woff2"
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/Inter/Inter-Bold.ttf"
+            href="/fonts/Inter/Inter-Bold-subset.woff2"
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link

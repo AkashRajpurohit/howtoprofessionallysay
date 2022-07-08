@@ -7,7 +7,8 @@
   font-style: normal;
   font-weight: 400 900;
   font-display: swap;
-  src: url(/fonts/Dancing_Script/DancingScript-Medium.ttf) format('opentype');
+  src: url(/fonts/Dancing_Script/DancingScript-Medium.woff2) format('woff2'),
+    url(/fonts/Dancing_Script/DancingScript-Medium.ttf) format('truetype');
 }
 
 @font-face {
@@ -15,7 +16,8 @@
   font-style: normal;
   font-weight: 100 400;
   font-display: swap;
-  src: url(/fonts/Inter/Inter-Regular.ttf) format('opentype');
+  src: url(/fonts/Inter/Inter-Regular-subset.woff2) format('woff2'),
+    url(/fonts/Inter/Inter-Regular-subset.ttf) format('truetype');
 }
 
 @font-face {
@@ -23,7 +25,8 @@
   font-style: normal;
   font-weight: 400 600;
   font-display: swap;
-  src: url(/fonts/Inter/Inter-Medium.ttf) format('opentype');
+  src: url(/fonts/Inter/Inter-Medium-subset.woff2) format('woff2'),
+    url(/fonts/Inter/Inter-Medium-subset.ttf) format('truetype');
 }
 
 @font-face {
@@ -31,7 +34,8 @@
   font-style: normal;
   font-weight: 700 900;
   font-display: swap;
-  src: url(/fonts/Inter/Inter-Bold.ttf) format('opentype');
+  src: url(/fonts/Inter/Inter-Bold-subset.woff2) format('woff2'),
+    url(/fonts/Inter/Inter-Bold-subset.ttf) format('truetype');
 }
 
 #carbonads {
