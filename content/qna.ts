@@ -278,7 +278,7 @@ const qna: IQnA[] = [
     question: 'Does taking on all this extra work come with extra pay?',
     answer:
       'With my role expanding is there a plan to review my title and compensation to better reflect these additional responsibilities?',
-    alternativeAnswers: [],
+    alternativeAnswers: ['As my role has organically evolved, can we schedule time to review my overall compensation and discuss whether or not it is still aligned with my current role and responsibilities?'],
   },
   {
     id: 41,
@@ -300,6 +300,30 @@ const qna: IQnA[] = [
       'If you have me scheduled in meetings all day, when do you expect me to get this work done?',
     answer:
       'My calendar is currently heavily scheduled with meetings. To ensure appropriate time is available to get this done I can sit out of lower priority meetings this week or extend the deadline on this project. Please let me know which is preferred?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 44,
+    question:
+        'If I’m doing your job for you, then what are you doing all day?',
+    answer:
+        'Is there a higher priority task that is consuming all of your capacity at the moment?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 45,
+    question:
+        'I can’t take on anymore work right now',
+    answer:
+        'I am unable to take that on at the moment as my current workload is quite heavy. Is there someone else who can assist with this?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 46,
+    question:
+        'Your micromanaging isn’t making this go any faster',
+    answer:
+        'Though I appreciate your attention to this, I feel as though I could be more productive if I had an opportunity to work independently here.',
     alternativeAnswers: [],
   },
 ];
