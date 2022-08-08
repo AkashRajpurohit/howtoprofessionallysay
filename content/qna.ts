@@ -32,7 +32,7 @@ const qna: IQnA[] = [
     id: 5,
     question: 'I already told you this',
     answer: 'As Indicated prior',
-    alternativeAnswers: [],
+    alternativeAnswers: ['The information has not changed since the last time it was communicated.'],
   },
   {
     id: 6,
@@ -153,7 +153,7 @@ const qna: IQnA[] = [
     question: 'We do not need to have a meeting about this',
     answer:
       'Being respectful of everyone’s time let’s discuss this through email until we have a more defined agenda.',
-    alternativeAnswers: [],
+    alternativeAnswers: ['Being respectful of everyone’s time, can we communicate about this via email moving forward?'],
   },
   {
     id: 23,
@@ -278,7 +278,8 @@ const qna: IQnA[] = [
     question: 'Does taking on all this extra work come with extra pay?',
     answer:
       'With my role expanding is there a plan to review my title and compensation to better reflect these additional responsibilities?',
-    alternativeAnswers: ['As my role has organically evolved, can we schedule time to review my overall compensation and discuss whether or not it is still aligned with my current role and responsibilities?'],
+    alternativeAnswers: ['As my role has organically evolved, can we schedule time to review my overall compensation and discuss whether or not it is still aligned with my current role and responsibilities?',
+    'Will these tasks be part of my job long-term? If so, is there an opportunity to reevaluate my job description, title, and overall compensation to more accurately reflect these additional responsibilities?'],
   },
   {
     id: 41,
@@ -324,6 +325,81 @@ const qna: IQnA[] = [
         'Your micromanaging isn’t making this go any faster',
     answer:
         'Though I appreciate your attention to this, I feel as though I could be more productive if I had an opportunity to work independently here.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 47,
+    question: 'If you expect me to do the job of 3 people, then I expect you to pay me the salary of 3 people.',
+    answer:
+        'Are additional team members being added to take on these roles or will I be expected to absorb these responsibilities?  If the latter, I would be happy to set up some time to discuss appropriate compensation for this role expansion',
+    alternativeAnswers: [],
+  },
+  {
+    id: 48,
+    question: 'You are not my boss, stop trying to assign me work.',
+    answer:
+        'Have you connected with [manager name] in regards to me taking this on? As it has not been communicated to me that I’ll be working on this.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 49,
+    question: 'If you want it done your way then just do it yourself.',
+    answer:
+        'As you seem to have a very clear vision for the execution of this, I encourage you to take the lead here and I’m happy to support you where necessary.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 50,
+    question: 'If you want it done your way then just do it yourself.',
+    answer: 'As you seem to have a very clear vision for the execution of this, I encourage you to take the lead here and I’m happy to support you where necessary.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 51,
+    question: 'I don’t want to work with you more than I have to.',
+    answer: 'Would you be open to replacing our frequent communications with a monthly touch base where we can discuss all updates during that time?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 52,
+    question: 'I don’t want to attend a work event during my personal time.',
+    answer: 'I’m unable to attend after working hours.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 53,
+    question: 'Does the company actually care about the employees?',
+    answer: 'Are there resources and boundaries in place to support the physical and mental health of employees?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 54,
+    question: 'How much does this role pay?',
+    answer: 'Can you share what the overall compensation looks like for this role?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 55,
+    question: 'Are promotions based on performance or politics?',
+    answer: 'Is there an opportunity for growth within the company and if so what is the main metric for promotion?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 56,
+    question: 'Do you have a culture that expects employees to put in over 40 hours each week?',
+    answer: 'Is it common within the company for employees to exceed 40 working hours per week?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 57,
+    question: 'Is the manager of this role a micromanager?',
+    answer: 'How involved is the reporting manager with this role?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 58,
+    question: 'Do you expect employees to be available 24/7?',
+    answer: 'What is the expectation for being available outside of working hours?',
     alternativeAnswers: [],
   },
 ];
