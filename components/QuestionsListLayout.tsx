@@ -103,7 +103,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
   const { questionsToDisplay } = useStore();
 
   const printPDF = () => {
-    trackEvent({ type: 'Click', value: 'Print PDF' });
+    trackEvent({ name: 'Click', data: { value: 'Print PDF' } });
     window.print();
   };
 

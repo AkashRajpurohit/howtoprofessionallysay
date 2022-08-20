@@ -12,7 +12,7 @@ export interface IQnA {
 
 export interface UmamiWindow extends Window {
   umami: {
-    trackEvent: (event_value: string, event_type: string) => void;
+    trackEvent: (event_name: string, event_data: Record<any, any>) => void;
     trackView: (url: string) => void;
   };
 }

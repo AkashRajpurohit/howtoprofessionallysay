@@ -2,19 +2,19 @@ import { UmamiWindow } from './types';
 declare let window: UmamiWindow;
 
 export const trackEvent = ({
-  type,
-  value,
+  name,
+  data = {},
 }: {
-  type: string;
-  value: string;
+  name: string;
+  data: Record<any, any>;
 }) => {
   if (typeof window !== undefined) {
     if (window.umami) {
-      window.umami.trackEvent(value, type);
+      window.umami.trackEvent(name, data);
     }
   }
 };
 
 export const trackOutboundLink = (url: string) => {
-  trackEvent({ type: 'Outbound Link', value: url });
+  trackEvent({ name: 'Outbound Link', data: { url } });
 };

@@ -17,7 +17,7 @@ const Share: FunctionComponent = (): JSX.Element => {
   const [isCopied, handleCopy] = useCopyToClipboard(1500, publicUrl);
 
   const onShareClick = (method: Method) => {
-    trackEvent({ type: 'Share', value: method });
+    trackEvent({ name: 'Share', data: { method } });
 
     if (method === 'copy') {
       handleCopy();
