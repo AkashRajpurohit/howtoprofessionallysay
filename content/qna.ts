@@ -74,7 +74,7 @@ const qna: IQnA[] = [
     question: 'That’s not my job',
     answer:
       'This falls outside of my responsibilities but I would be happy to connect you with someone who can help.',
-    alternativeAnswers: [],
+    alternativeAnswers: ['I’m not the correct person to assist with this but I am happy to connect you with [insert name] who will be able to help'],
   },
   {
     id: 12,
@@ -394,6 +394,18 @@ const qna: IQnA[] = [
     id: 57,
     question: 'Do you expect employees to be available 24/7?',
     answer: 'What is the expectation for being available outside of working hours?',
+    alternativeAnswers: [],
+  },
+  {
+    id: 58,
+    question: 'I don’t believe you.',
+    answer: 'I’m not confident that the information you have provided is correct.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 59,
+    question: 'You are wasting my time.',
+    answer: 'Being respectful of time let’s regroup when more details become available.',
     alternativeAnswers: [],
   },
 ];
