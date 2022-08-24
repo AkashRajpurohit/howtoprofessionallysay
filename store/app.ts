@@ -2,6 +2,7 @@ import { Flow, IQnA } from 'lib/types';
 import { matchSorter } from 'match-sorter';
 import create from 'zustand';
 import qnas from 'content/qna';
+import { FAV_KEY } from 'lib/utils';
 
 interface IAppState {
   flow: Flow;
@@ -10,6 +11,8 @@ interface IAppState {
   setSearchValue: (value: string) => void;
   questionsToDisplay: IQnA[];
   setQuestionsToDisplay: (questions: IQnA[]) => void;
+  favoriteQuestions: IQnA[];
+  setFavoriteQuestions: (questions: IQnA[]) => void;
 }
 
 const useStore = create<IAppState>((set, get) => ({
@@ -33,6 +36,13 @@ const useStore = create<IAppState>((set, get) => ({
   questionsToDisplay: qnas,
   setQuestionsToDisplay: (questions: IQnA[]) => {
     set((state) => ({ ...state, questionsToDisplay: questions }));
+  },
+  favoriteQuestions: [],
+  setFavoriteQuestions: (questions: IQnA[]) => {
+    set((state) => ({ ...state, favoriteQuestions: questions }));
+    if (window && window.localStorage) {
+      window.localStorage.setItem(FAV_KEY, JSON.stringify(questions));
+    }
   },
 }));
 
