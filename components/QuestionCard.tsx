@@ -1,3 +1,4 @@
+import { trackEvent } from 'lib/analytics';
 import { Flow, IQnA } from 'lib/types';
 import React, { FunctionComponent } from 'react';
 import { ArrowRight, Star } from 'react-feather';
@@ -29,6 +30,11 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
     }
 
     setFavoriteQuestions(newFavs);
+
+    trackEvent({
+      name: 'Favorite',
+      data: { id: qna.id, action: favAlreadyAdded ? 'removed' : 'added' },
+    });
   };
 
   return (
