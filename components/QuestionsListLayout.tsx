@@ -7,10 +7,15 @@ import SearchInput from './SearchInput';
 import { FAV_KEY } from 'lib/utils';
 import FlowOfData from './FlowOfData';
 import PrintPageButton from './PrintPageButton';
+import FilterVisibilityModeButton from './FilterVisibilityModeButton';
 
 const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
-  const { questionsToDisplay, favoriteQuestions, setFavoriteQuestions } =
-    useStore();
+  const {
+    questionsToDisplay,
+    favoriteQuestions,
+    setFavoriteQuestions,
+    filterOptions,
+  } = useStore();
 
   useEffect(() => {
     if (window) {
@@ -21,6 +26,10 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
     }
   }, []);
 
+  const questionsToRenderBasedOnFilterOptions = filterOptions.all
+    ? questionsToDisplay
+    : favoriteQuestions;
+
   return (
     <div>
       <FlowOfData />
@@ -28,22 +37,12 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
         <div className="flex-grow">
           <SearchInput />
         </div>
-        <div className="flex items-center rounded-md bg-gray-700 p-2">
-          <PrintPageButton />
-        </div>
+        <PrintPageButton />
+        <FilterVisibilityModeButton />
       </div>
-      {favoriteQuestions && favoriteQuestions.length > 0 && (
-        <ul role="list" className="divide-y-2 divide-gray-500">
-          {favoriteQuestions.map((qna) => (
-            <li key={qna.id} className="py-6">
-              <QuestionCard qna={qna} />
-            </li>
-          ))}
-        </ul>
-      )}
       <ul role="list" className="divide-y-2 divide-gray-500">
-        {!questionsToDisplay.length && <NoQuestionFound />}
-        {questionsToDisplay.map((qna) => (
+        {!questionsToRenderBasedOnFilterOptions.length && <NoQuestionFound />}
+        {questionsToRenderBasedOnFilterOptions.map((qna) => (
           <li key={qna.id} className="py-6">
             <QuestionCard qna={qna} />
           </li>

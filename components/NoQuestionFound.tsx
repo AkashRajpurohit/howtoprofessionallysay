@@ -3,13 +3,13 @@ import React, { FunctionComponent } from 'react';
 const NoQuestionFound: FunctionComponent = (): JSX.Element => {
   return (
     <div className="mt-4 flex flex-col items-center justify-center gap-6">
-      <p>No data found with this search text.</p>
       <img
         src={'/static/images/not-found.svg'}
         width={250}
         height={300}
         alt="data not found"
       />
+      <p>No data found for this option.</p>
       <p>
         Want to add it? Head{' '}
         <a

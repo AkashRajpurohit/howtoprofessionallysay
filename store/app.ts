@@ -1,4 +1,4 @@
-import { Flow, IQnA } from 'lib/types';
+import { Flow, IQnA, IFilterOptions } from 'lib/types';
 import { matchSorter } from 'match-sorter';
 import create from 'zustand';
 import qnas from 'content/qna';
@@ -13,6 +13,8 @@ interface IAppState {
   setQuestionsToDisplay: (questions: IQnA[]) => void;
   favoriteQuestions: IQnA[];
   setFavoriteQuestions: (questions: IQnA[]) => void;
+  filterOptions: IFilterOptions;
+  setFilterOption: (option: keyof IFilterOptions) => void;
 }
 
 const useStore = create<IAppState>((set, get) => ({
@@ -43,6 +45,21 @@ const useStore = create<IAppState>((set, get) => ({
     if (window && window.localStorage) {
       window.localStorage.setItem(FAV_KEY, JSON.stringify(questions));
     }
+  },
+  filterOptions: { favorite: false, all: true },
+  setFilterOption: (option) => {
+    const updatedFilterOptions: IFilterOptions = {
+      favorite: false,
+      all: false,
+    };
+
+    if (option === 'all') {
+      updatedFilterOptions.all = true;
+    } else if (option === 'favorite') {
+      updatedFilterOptions.favorite = true;
+    }
+
+    set((state) => ({ ...state, filterOptions: updatedFilterOptions }));
   },
 }));
 
