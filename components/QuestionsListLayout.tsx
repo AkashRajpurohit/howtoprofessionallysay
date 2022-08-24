@@ -1,5 +1,5 @@
-import { Flow } from 'lib/types';
-import React, { FunctionComponent } from 'react';
+import { Flow, IQnA } from 'lib/types';
+import React, { FunctionComponent, useEffect } from 'react';
 import QuestionCard from './QuestionCard';
 import { Switch } from '@headlessui/react';
 import clsx from 'clsx';
@@ -7,6 +7,7 @@ import { ArrowDown, ArrowRight, Printer } from 'react-feather';
 import { trackEvent } from 'lib/analytics';
 import useStore from 'store/app';
 import NoQuestionFound from './NoQuestionFound';
+import { FAV_KEY } from 'lib/utils';
 
 const SearchInput: FunctionComponent = () => {
   const { setSearchValue, searchValue } = useStore();
@@ -100,7 +101,17 @@ const FlowOfData: FunctionComponent = () => {
 };
 
 const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
-  const { questionsToDisplay } = useStore();
+  const { questionsToDisplay, favoriteQuestions, setFavoriteQuestions } =
+    useStore();
+
+  useEffect(() => {
+    if (window) {
+      const fav = JSON.parse(
+        window.localStorage.getItem(FAV_KEY) ?? '[]'
+      ) as IQnA[];
+      setFavoriteQuestions(fav);
+    }
+  }, []);
 
   const printPDF = () => {
     trackEvent({ name: 'Click', data: { value: 'Print PDF' } });
@@ -125,6 +136,15 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
           </button>
         </div>
       </div>
+      {favoriteQuestions && favoriteQuestions.length > 0 && (
+        <ul role="list" className="divide-y-2 divide-gray-500">
+          {favoriteQuestions.map((qna) => (
+            <li key={qna.id} className="py-6">
+              <QuestionCard qna={qna} />
+            </li>
+          ))}
+        </ul>
+      )}
       <ul role="list" className="divide-y-2 divide-gray-500">
         {!questionsToDisplay.length && <NoQuestionFound />}
         {questionsToDisplay.map((qna) => (
