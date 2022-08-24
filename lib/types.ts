@@ -10,6 +10,11 @@ export interface IQnA {
   alternativeAnswers?: string[];
 }
 
+export interface IFilterOptions {
+  favorite: boolean;
+  all: boolean;
+}
+
 export interface UmamiWindow extends Window {
   umami: {
     trackEvent: (event_name: string, event_data: Record<any, any>) => void;

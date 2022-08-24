@@ -8,14 +8,15 @@ const PrintPageButton = () => {
   };
 
   return (
-    <button
-      aria-label="Print the page as PDF"
-      className="text-primary-500"
-      title="Print the page as PDF"
-      onClick={printPDF}
-    >
-      <Printer size={24} />
-    </button>
+    <div className="flex items-center rounded-md bg-gray-700 p-2">
+      <button
+        aria-label="Print the page as PDF"
+        title="Print the page as PDF"
+        onClick={printPDF}
+      >
+        <Printer size={24} />
+      </button>
+    </div>
   );
 };
 
