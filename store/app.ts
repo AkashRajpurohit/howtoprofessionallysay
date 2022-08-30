@@ -2,11 +2,12 @@ import { Flow, IQnA, IFilterOptions } from 'lib/types';
 import { matchSorter } from 'match-sorter';
 import create from 'zustand';
 import qnas from 'content/qna';
-import { FAV_KEY } from 'lib/utils';
+import { CURRENT_FLOW_KEY, FAV_KEY, FILTER_OPTIONS_KEY } from 'lib/utils';
 
 interface IAppState {
   flow: Flow;
   toggleFlow: () => void;
+  setFlow: (flow: Flow) => void;
   searchValue: string;
   setSearchValue: (value: string) => void;
   questionsToDisplay: IQnA[];
@@ -21,7 +22,18 @@ const useStore = create<IAppState>((set, get) => ({
   flow: Flow.A_TO_B,
   toggleFlow: () => {
     const currentFlow = get().flow;
-    set({ flow: currentFlow === Flow.A_TO_B ? Flow.B_TO_A : Flow.A_TO_B });
+    if (currentFlow === Flow.A_TO_B) {
+      get().setFlow(Flow.B_TO_A);
+    } else {
+      get().setFlow(Flow.A_TO_B);
+    }
+  },
+  setFlow: (flow: Flow) => {
+    set((state) => ({ ...state, flow }));
+
+    if (window && window.localStorage) {
+      window.localStorage.setItem(CURRENT_FLOW_KEY, flow);
+    }
   },
   searchValue: '',
   setSearchValue: (value: string) => {
@@ -60,6 +72,10 @@ const useStore = create<IAppState>((set, get) => ({
     }
 
     set((state) => ({ ...state, filterOptions: updatedFilterOptions }));
+
+    if (window && window.localStorage) {
+      window.localStorage.setItem(FILTER_OPTIONS_KEY, option);
+    }
   },
 }));
 
