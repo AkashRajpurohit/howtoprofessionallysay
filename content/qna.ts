@@ -32,7 +32,9 @@ const qna: IQnA[] = [
     id: 5,
     question: 'I already told you this',
     answer: 'As Indicated prior',
-    alternativeAnswers: ['The information has not changed since the last time it was communicated.'],
+    alternativeAnswers: [
+      'The information has not changed since the last time it was communicated.',
+    ],
   },
   {
     id: 6,
@@ -74,7 +76,9 @@ const qna: IQnA[] = [
     question: 'That’s not my job',
     answer:
       'This falls outside of my responsibilities but I would be happy to connect you with someone who can help.',
-    alternativeAnswers: ['I’m not the correct person to assist with this but I am happy to connect you with [insert name] who will be able to help'],
+    alternativeAnswers: [
+      'I’m not the correct person to assist with this but I am happy to connect you with [insert name] who will be able to help',
+    ],
   },
   {
     id: 12,
@@ -153,7 +157,9 @@ const qna: IQnA[] = [
     question: 'We do not need to have a meeting about this',
     answer:
       'Being respectful of everyone’s time let’s discuss this through email until we have a more defined agenda.',
-    alternativeAnswers: ['Being respectful of everyone’s time, can we communicate about this via email moving forward?'],
+    alternativeAnswers: [
+      'Being respectful of everyone’s time, can we communicate about this via email moving forward?',
+    ],
   },
   {
     id: 23,
@@ -278,8 +284,10 @@ const qna: IQnA[] = [
     question: 'Does taking on all this extra work come with extra pay?',
     answer:
       'With my role expanding is there a plan to review my title and compensation to better reflect these additional responsibilities?',
-    alternativeAnswers: ['As my role has organically evolved, can we schedule time to review my overall compensation and discuss whether or not it is still aligned with my current role and responsibilities?',
-    'Will these tasks be part of my job long-term? If so, is there an opportunity to reevaluate my job description, title, and overall compensation to more accurately reflect these additional responsibilities?'],
+    alternativeAnswers: [
+      'As my role has organically evolved, can we schedule time to review my overall compensation and discuss whether or not it is still aligned with my current role and responsibilities?',
+      'Will these tasks be part of my job long-term? If so, is there an opportunity to reevaluate my job description, title, and overall compensation to more accurately reflect these additional responsibilities?',
+    ],
   },
   {
     id: 41,
@@ -305,53 +313,52 @@ const qna: IQnA[] = [
   },
   {
     id: 44,
-    question:
-        'If I’m doing your job for you, then what are you doing all day?',
+    question: 'If I’m doing your job for you, then what are you doing all day?',
     answer:
-        'Is there a higher priority task that is consuming all of your capacity at the moment?',
+      'Is there a higher priority task that is consuming all of your capacity at the moment?',
     alternativeAnswers: [],
   },
   {
     id: 45,
-    question:
-        'I can’t take on anymore work right now',
+    question: 'I can’t take on anymore work right now',
     answer:
-        'I am unable to take that on at the moment as my current workload is quite heavy. Is there someone else who can assist with this?',
+      'I am unable to take that on at the moment as my current workload is quite heavy. Is there someone else who can assist with this?',
     alternativeAnswers: [],
   },
   {
     id: 46,
-    question:
-        'Your micromanaging isn’t making this go any faster',
+    question: 'Your micromanaging isn’t making this go any faster',
     answer:
-        'Though I appreciate your attention to this, I feel as though I could be more productive if I had an opportunity to work independently here.',
+      'Though I appreciate your attention to this, I feel as though I could be more productive if I had an opportunity to work independently here.',
     alternativeAnswers: [],
   },
   {
     id: 47,
-    question: 'If you expect me to do the job of 3 people, then I expect you to pay me the salary of 3 people.',
+    question:
+      'If you expect me to do the job of 3 people, then I expect you to pay me the salary of 3 people.',
     answer:
-        'Are additional team members being added to take on these roles or will I be expected to absorb these responsibilities?  If the latter, I would be happy to set up some time to discuss appropriate compensation for this role expansion',
+      'Are additional team members being added to take on these roles or will I be expected to absorb these responsibilities?  If the latter, I would be happy to set up some time to discuss appropriate compensation for this role expansion',
     alternativeAnswers: [],
   },
   {
     id: 48,
     question: 'You are not my boss, stop trying to assign me work.',
     answer:
-        'Have you connected with [manager name] in regards to me taking this on? As it has not been communicated to me that I’ll be working on this.',
+      'Have you connected with [manager name] in regards to me taking this on? As it has not been communicated to me that I’ll be working on this.',
     alternativeAnswers: [],
   },
   {
     id: 49,
     question: 'If you want it done your way then just do it yourself.',
     answer:
-        'As you seem to have a very clear vision for the execution of this, I encourage you to take the lead here and I’m happy to support you where necessary.',
+      'As you seem to have a very clear vision for the execution of this, I encourage you to take the lead here and I’m happy to support you where necessary.',
     alternativeAnswers: [],
   },
   {
     id: 50,
     question: 'I don’t want to work with you more than I have to.',
-    answer: 'Would you be open to replacing our frequent communications with a monthly touch base where we can discuss all updates during that time?',
+    answer:
+      'Would you be open to replacing our frequent communications with a monthly touch base where we can discuss all updates during that time?',
     alternativeAnswers: [],
   },
   {
@@ -363,25 +370,30 @@ const qna: IQnA[] = [
   {
     id: 52,
     question: 'Does the company actually care about the employees?',
-    answer: 'Are there resources and boundaries in place to support the physical and mental health of employees?',
+    answer:
+      'Are there resources and boundaries in place to support the physical and mental health of employees?',
     alternativeAnswers: [],
   },
   {
     id: 53,
     question: 'How much does this role pay?',
-    answer: 'Can you share what the overall compensation looks like for this role?',
+    answer:
+      'Can you share what the overall compensation looks like for this role?',
     alternativeAnswers: [],
   },
   {
     id: 54,
     question: 'Are promotions based on performance or politics?',
-    answer: 'Is there an opportunity for growth within the company and if so what is the main metric for promotion?',
+    answer:
+      'Is there an opportunity for growth within the company and if so what is the main metric for promotion?',
     alternativeAnswers: [],
   },
   {
     id: 55,
-    question: 'Do you have a culture that expects employees to put in over 40 hours each week?',
-    answer: 'Is it common within the company for employees to exceed 40 working hours per week?',
+    question:
+      'Do you have a culture that expects employees to put in over 40 hours each week?',
+    answer:
+      'Is it common within the company for employees to exceed 40 working hours per week?',
     alternativeAnswers: [],
   },
   {
@@ -393,19 +405,50 @@ const qna: IQnA[] = [
   {
     id: 57,
     question: 'Do you expect employees to be available 24/7?',
-    answer: 'What is the expectation for being available outside of working hours?',
+    answer:
+      'What is the expectation for being available outside of working hours?',
     alternativeAnswers: [],
   },
   {
     id: 58,
     question: 'I don’t believe you.',
-    answer: 'I’m not confident that the information you have provided is correct.',
+    answer:
+      'I’m not confident that the information you have provided is correct.',
     alternativeAnswers: [],
   },
   {
     id: 59,
     question: 'You are wasting my time.',
-    answer: 'Being respectful of time let’s regroup when more details become available.',
+    answer:
+      'Being respectful of time let’s regroup when more details become available.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 60,
+    question: 'I deserve a raise.',
+    answer:
+      'Given my contributions to the company’s success along with a current market analysis of my role. I am setting up time to discuss a salary review.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 61,
+    question: 'The way you speak to me is disrespectful.',
+    answer:
+      'I encourage you to reevaluate the way you are speaking to me, as the disrespect you are currently displaying towards me is not welcomed nor will it be tolerated.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 62,
+    question: 'That idea is going to be an epic fail.',
+    answer:
+      'I am not in agreement with this idea and have hesitations moving forward.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 63,
+    question: 'I am burning out with this workload and your lack of support.',
+    answer:
+      'My productivity is being impacted by the overwhelming workload I am currently assigned. Is there any support you or the team can offer?',
     alternativeAnswers: [],
   },
 ];
