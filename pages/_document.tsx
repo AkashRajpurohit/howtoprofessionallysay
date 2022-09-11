@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/Dancing_Script/DancingScript-Medium.woff2"
+            href="/fonts/Dancing_Script/DancingScript-Medium-subset.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"

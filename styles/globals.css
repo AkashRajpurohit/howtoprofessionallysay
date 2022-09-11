@@ -7,7 +7,8 @@
   font-style: normal;
   font-weight: 400 900;
   font-display: swap;
-  src: url(/fonts/Dancing_Script/DancingScript-Medium.woff2) format('woff2'),
+  src: url(/fonts/Dancing_Script/DancingScript-Medium-subset.woff2)
+      format('woff2'),
     url(/fonts/Dancing_Script/DancingScript-Medium.ttf) format('truetype');
 }
 
