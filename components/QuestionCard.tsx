@@ -47,7 +47,7 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
         </div>
         <button
           onClick={handleFavoriteClick}
-          title={`click to add to favorite`}
+          title={`click to ${isFavorite ? 'remove from' : 'add to'} favorite`}
         >
           {isFavorite ? (
             <svg
