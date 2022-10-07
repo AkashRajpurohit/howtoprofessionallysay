@@ -47,13 +47,15 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
 
   return (
     <div>
-      <FlowOfData />
-      <div className="flex items-center gap-3 print:hidden">
-        <div className="flex-grow">
-          <SearchInput />
+      <div className="top-0 bg-gray-900 py-4 lg:sticky">
+        <FlowOfData />
+        <div className="flex items-center gap-3 print:hidden">
+          <div className="flex-grow">
+            <SearchInput />
+          </div>
+          <PrintPageButton />
+          <FilterVisibilityModeButton />
         </div>
-        <PrintPageButton />
-        <FilterVisibilityModeButton />
       </div>
       <ul role="list" className="divide-y-2 divide-gray-500">
         {!questionsToRenderBasedOnFilterOptions.length && <NoQuestionFound />}
