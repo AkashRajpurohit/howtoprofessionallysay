@@ -451,6 +451,37 @@ const qna: IQnA[] = [
       'My productivity is being impacted by the overwhelming workload I am currently assigned. Is there any support you or the team can offer?',
     alternativeAnswers: [],
   },
+  {
+    id: 64,
+    question: 'You are underpaying me.',
+    answer: 'There is a notable discrepancy between my current salary and the going market rate for the comparable roles.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 65,
+    question: 'My job has evolved but my salary has stayed the same.',
+    answer: 'As my role has expanded since joining the company, I would like to review my compensation so that it better reflects my evolved responsibilities.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 66,
+    question: 'I want a higher salary than you are offering me.',
+    answer: 'I was hoping to be in the X to Y salary range for this position.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 67,
+    question: 'If you can’t pay any more then what else can you offer.',
+    answer:
+      'I understand there are budget restrictions that limit your ability to increase my salary. However, I would like to understand if additional vacation days, benefits, bonus, and other overall compensation items can be offered.',
+    alternativeAnswers: [],
+  },
+  {
+    id: 68,
+    question: 'Maybe if you communicated that with us sooner we wouldn’t be in this mess.',
+    answer: 'In the future it is important to share information like this with the team sooner so we might mitigate these sort of issues.',
+    alternativeAnswers: [],
+  }
 ];
 
 export default qna;
