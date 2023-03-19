@@ -1,4 +1,4 @@
-import qna from 'content/qna';
+import qna from 'content/qna.json';
 
 export const getQnAs = () => {
   return qna;

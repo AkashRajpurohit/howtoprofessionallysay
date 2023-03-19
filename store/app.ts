@@ -1,7 +1,7 @@
 import { Flow, IQnA, IFilterOptions } from 'lib/types';
 import { matchSorter } from 'match-sorter';
 import create from 'zustand';
-import qnas from 'content/qna';
+import qnas from 'content/qna.json';
 import { CURRENT_FLOW_KEY, FAV_KEY, FILTER_OPTIONS_KEY } from 'lib/utils';
 
 interface IAppState {
