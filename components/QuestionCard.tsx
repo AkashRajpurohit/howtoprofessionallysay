@@ -38,10 +38,10 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
   };
 
   return (
-    <div className="w-full space-y-4 divide-y divide-gray-600 rounded-md border-2 border-gray-700 bg-gray-800 px-4 py-2 shadow-lg">
+    <div className="w-full space-y-4 divide-y divide-gray-300 rounded-md border-2 border-gray-200 bg-gray-100 px-4 py-2 shadow-lg dark:divide-gray-600 dark:border-gray-700 dark:bg-gray-800">
       <div className="flex w-full flex-row items-center justify-between">
         <div className="flex-grow">
-          <h3 className="select-all text-xl font-bold leading-9 tracking-tight text-primary-100 xl:text-2xl">
+          <h3 className="select-all text-xl font-bold leading-9 tracking-tight text-primary-800 dark:text-primary-100 xl:text-2xl">
             {question}
           </h3>
         </div>
@@ -61,12 +61,12 @@ const QuestionCard: FunctionComponent<IQuestionCardProps> = ({
               <path d="M 30.335938 12.546875 L 20.164063 11.472656 L 16 2.132813 L 11.835938 11.472656 L 1.664063 12.546875 L 9.261719 19.394531 L 7.140625 29.398438 L 16 24.289063 L 24.859375 29.398438 L 22.738281 19.394531 Z" />
             </svg>
           ) : (
-            <Star size={24} className="text-gray-300" />
+            <Star size={24} className="text-gray-600 dark:text-gray-300" />
           )}
         </button>
       </div>
       <div>
-        <ul className="py-4 text-lg font-medium text-primary-200 xl:text-xl">
+        <ul className="py-4 text-lg font-medium text-primary-700 dark:text-primary-200 xl:text-xl">
           {(answers || []).map((answer, index) => (
             <li className="my-1 flex items-start gap-2" key={index}>
               <span className="mt-0.5 hidden text-primary-500 sm:inline">

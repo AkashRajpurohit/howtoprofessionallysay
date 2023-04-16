@@ -13,7 +13,7 @@ const FilterVisibilityModeButton = () => {
         <>
           <div>
             <Menu.Button
-              className="flex items-center rounded-md bg-gray-700 p-2"
+              className="flex items-center rounded-md bg-gray-200 p-2 dark:bg-gray-700"
               title="filter the list by favorites or all"
             >
               <span className="sr-only">Open filters</span>
@@ -31,13 +31,13 @@ const FilterVisibilityModeButton = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-gray-700 py-1 shadow-lg"
+              className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-gray-200 py-1 shadow-lg dark:bg-gray-700"
             >
               {Object.keys(filterOptions).map((key) => (
                 <Menu.Item key={key}>
                   {() => (
                     <button
-                      className="block w-full cursor-pointer px-4 py-3 text-sm text-gray-100 hover:bg-gray-600"
+                      className="block w-full cursor-pointer px-4 py-3 text-sm text-gray-800 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-600"
                       onClick={() =>
                         setFilterOption(key as keyof IFilterOptions)
                       }

@@ -13,7 +13,7 @@ const SearchInput: FunctionComponent = () => {
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
         placeholder="What are you looking for?"
-        className="block w-full rounded-md border border-gray-600 bg-gray-700 py-2 pr-3 shadow-sm placeholder:italic placeholder:text-gray-400 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm"
+        className="block w-full rounded-md border border-gray-600 bg-gray-100 py-2 pr-3 shadow-sm placeholder:italic placeholder:text-gray-600 focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 dark:bg-gray-700 dark:placeholder:text-gray-400 sm:text-sm"
       />
       <svg
         aria-hidden="true"
