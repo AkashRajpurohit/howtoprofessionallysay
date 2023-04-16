@@ -6,15 +6,13 @@ interface IHeaderProps {}
 
 const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
   return (
-    <header className="flex min-h-[40vh] flex-col items-center justify-center gap-6 bg-primary-900 py-20 px-4 print:hidden">
+    <header className="flex min-h-[40vh] flex-col items-center justify-center gap-6 bg-primary-600 py-20 px-4 dark:bg-primary-900 print:hidden">
       <h1 className="break-words bg-gradient-to-r from-yellow-500 to-teal-400 bg-clip-text p-2 text-center font-dancing text-6xl font-extrabold leading-tight tracking-tighter text-transparent sm:leading-10 xl:text-8xl">
         {siteMetadata.title}
       </h1>
       <p className="text-center text-xl font-bold text-gray-200">
         {siteMetadata.description}{' '}
-        <small className="text-sm text-gray-300">
-          (try at your own risk)
-        </small>
+        <small className="text-sm text-gray-300">(try at your own risk)</small>
       </p>
       <div className="flex flex-col gap-6 md:flex-row">
         <a

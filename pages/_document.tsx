@@ -46,7 +46,7 @@ class MyDocument extends Document {
             href="/static/images/favicon-16x16.png"
           />
         </Head>
-        <body className="bg-gray-900 font-sans text-gray-200 antialiased">
+        <body className="bg-gray-50 font-sans text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-200">
           <Main />
           <NextScript />
         </body>

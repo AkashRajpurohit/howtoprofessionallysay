@@ -8,7 +8,7 @@ const PrintPageButton = () => {
   };
 
   return (
-    <div className="flex items-center rounded-md bg-gray-700 p-2">
+    <div className="flex items-center rounded-md bg-gray-200 p-2 dark:bg-gray-700">
       <button
         aria-label="Print the page as PDF"
         title="Print the page as PDF"

@@ -47,7 +47,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
 
   return (
     <div>
-      <div className="top-0 bg-gray-900 py-4 lg:sticky">
+      <div className="top-0 bg-gray-50 py-4 shadow-none dark:bg-gray-900 lg:sticky">
         <FlowOfData />
         <div className="flex items-center gap-3 print:hidden">
           <div className="flex-grow">

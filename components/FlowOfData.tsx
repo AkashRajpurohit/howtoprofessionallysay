@@ -15,27 +15,27 @@ const FlowOfData: FunctionComponent = () => {
         <p className="text-lg font-bold">Current flow of data</p>
         {enabled ? (
           <p className="flex flex-col gap-2 md:flex-row">
-            <span className="font-semibold text-red-500">
+            <span className="font-semibold text-red-800 dark:text-red-500">
               What you are being told by someone
             </span>
             <span className="h-5 w-5">
               <ArrowRight className="hidden md:block" />
               <ArrowDown className="block md:hidden" />
             </span>
-            <span className="font-semibold text-green-500">
+            <span className="font-semibold text-green-800 dark:text-green-500">
               What they actually mean
             </span>
           </p>
         ) : (
           <p className="flex flex-col gap-2 md:flex-row">
-            <span className="font-semibold text-red-500">
+            <span className="font-semibold text-red-800 dark:text-red-500">
               What you might feel like saying
             </span>
             <span className="h-5 w-5">
               <ArrowRight className="hidden md:block" />
               <ArrowDown className="block md:hidden" />
             </span>
-            <span className="font-semibold text-green-500">
+            <span className="font-semibold text-green-800 dark:text-green-500">
               What you can prefer to say instead
             </span>
           </p>
