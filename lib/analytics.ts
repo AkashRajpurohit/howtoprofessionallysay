@@ -10,7 +10,7 @@ export const trackEvent = ({
 }) => {
   if (typeof window !== undefined) {
     if (window.umami) {
-      window.umami.trackEvent(name, data);
+      window.umami.track(name, data);
     }
   }
 };

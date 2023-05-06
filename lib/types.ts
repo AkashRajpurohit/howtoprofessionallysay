@@ -17,7 +17,6 @@ export interface IFilterOptions {
 
 export interface UmamiWindow extends Window {
   umami: {
-    trackEvent: (event_name: string, event_data: Record<any, any>) => void;
-    trackView: (url: string) => void;
+    track: (event_name: string, event_data: Record<any, any>) => void;
   };
 }
