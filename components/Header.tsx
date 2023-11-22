@@ -6,15 +6,26 @@ interface IHeaderProps {}
 
 const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
   return (
-    <header className="flex min-h-[40vh] flex-col items-center justify-center gap-6 bg-primary-600 py-20 px-4 dark:bg-primary-900 print:hidden">
+    <header className="flex flex-col items-center justify-center gap-4 bg-primary-600 py-14 px-4 dark:bg-primary-900 print:hidden">
       <h1 className="break-words bg-gradient-to-r from-yellow-500 to-teal-400 bg-clip-text p-2 text-center font-dancing text-6xl font-extrabold leading-tight tracking-tighter text-transparent sm:leading-10 xl:text-8xl">
         {siteMetadata.title}
       </h1>
       <p className="text-center text-xl font-bold text-gray-200">
-        {siteMetadata.description}{' '}
-        <small className="text-sm text-gray-300">(try at your own risk)</small>
+        {siteMetadata.description}
       </p>
-      <div className="flex flex-col gap-6 md:flex-row">
+      <small className="text-center text-lg text-gray-300">
+        For adding more phrases, please{' '}
+        <a
+          href={siteMetadata.contributeFormLink}
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          onClick={() => trackOutboundLink(siteMetadata.contributeFormLink)}
+          className="underline hover:text-primary-300"
+        >
+          click here
+        </a>
+      </small>
+      <div className="mt-4 flex flex-col gap-6 md:flex-row">
         <a
           href={siteMetadata.siteRepo}
           rel="nofollow noopener noreferrer"
@@ -87,25 +98,9 @@ const Header: FunctionComponent<IHeaderProps> = (): JSX.Element => {
             </svg>
           </span>
           <span className="ease absolute flex h-full w-full transform items-center justify-center text-white transition-all duration-300 group-hover:translate-x-full">
-            Read More
+            Read the Blog
           </span>
-          <span className="invisible relative">Read More</span>
-        </a>
-        <a
-          href={siteMetadata.newsletter}
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-          onClick={() => trackOutboundLink(siteMetadata.newsletter)}
-          className="group relative overflow-hidden rounded-lg border border-gray-100 bg-gray-100 px-5 py-3 font-medium text-gray-600 shadow-inner"
-        >
-          <span className="ease absolute top-0 left-0 h-0 w-0 border-t-2 border-gray-600 transition-all duration-200 group-hover:w-full"></span>
-          <span className="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-gray-600 transition-all duration-200 group-hover:w-full"></span>
-          <span className="ease absolute top-0 left-0 h-0 w-full bg-gray-600 transition-all delay-200 duration-300 group-hover:h-full"></span>
-          <span className="ease absolute bottom-0 left-0 h-0 w-full bg-gray-600 transition-all delay-200 duration-300 group-hover:h-full"></span>
-          <span className="absolute inset-0 h-full w-full bg-gray-900 opacity-0 delay-300 duration-300 group-hover:opacity-100"></span>
-          <span className="ease relative transition-colors delay-200 duration-300 group-hover:text-white">
-            Newsletter ✉️
-          </span>
+          <span className="invisible relative">Read the Blog</span>
         </a>
       </div>
     </header>

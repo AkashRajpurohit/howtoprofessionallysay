@@ -1,3 +1,4 @@
+import siteMetadata from 'lib/sitemetadata';
 import React, { FunctionComponent } from 'react';
 
 const NoQuestionFound: FunctionComponent = (): JSX.Element => {
@@ -14,7 +15,7 @@ const NoQuestionFound: FunctionComponent = (): JSX.Element => {
         <p>
           Want to add it?{' '}
           <a
-            href="https://forms.gle/jHygHaDZNEy8YktN8"
+            href={siteMetadata.contributeFormLink}
             target="_blank"
             rel="noreferrer noopener"
             className="text-primary-500 hover:text-primary-400"

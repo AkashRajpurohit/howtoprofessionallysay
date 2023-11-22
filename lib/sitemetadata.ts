@@ -17,6 +17,7 @@ const siteMetadata = {
   newsletter: 'https://newsletter.akashrajpurohit.com',
   carbonCode: 'CEAIC23N',
   carbonPlacement: 'akashrajpurohitcom',
+  contributeFormLink: 'https://forms.gle/jHygHaDZNEy8YktN8',
 };
 
 export default siteMetadata;
