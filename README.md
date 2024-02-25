@@ -1,11 +1,31 @@
-![how-to-professionally-say](/public/static/images/twitter-card.png)
-# How to professionally say
+<br />
+<p align="center">
+  <a href="https://howtoprofessionallysay.akashrajpurohit.com/">
+    <img src="/public/static/images/twitter-card.png" alt="How to Professionally Say" width="600" />
+  </a>
 
-<a href="https://www.producthunt.com/posts/how-to-professionally-say?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-how&#0045;to&#0045;professionally&#0045;say" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=351395&theme=light" alt="How&#0032;to&#0032;professionally&#0032;say - A&#0032;guide&#0032;for&#0032;your&#0032;daily&#0032;&#0034;professional&#0034;&#0032;interactions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  <h3 align="center">How to Professionally Say</h3>
 
-<a href="https://www.producthunt.com/posts/how-to-professionally-say?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-how&#0045;to&#0045;professionally&#0045;say" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=351395&theme=light&period=daily" alt="How&#0032;to&#0032;professionally&#0032;say - A&#0032;guide&#0032;for&#0032;your&#0032;daily&#0032;&#0034;professional&#0034;&#0032;interactions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  <p align="center">
+    <samp>A guide for your daily "professional" interactions</samp>
+    <br />
+    <br />
+    <a href="https://twitter.com/akashwhocodes">
+      <img alt="follow on twitter" src="https://img.shields.io/twitter/follow/akashwhocodes.svg?style=social&label=@akashwhocodes">
+    </a>
+    <p align="center">
+      <a href="https://www.producthunt.com/posts/how-to-professionally-say?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-how&#0045;to&#0045;professionally&#0045;say" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=351395&theme=light" alt="How&#0032;to&#0032;professionally&#0032;say - A&#0032;guide&#0032;for&#0032;your&#0032;daily&#0032;&#0034;professional&#0034;&#0032;interactions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+      <a href="https://www.producthunt.com/posts/how-to-professionally-say?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-how&#0045;to&#0045;professionally&#0045;say" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=351395&theme=light&period=daily" alt="How&#0032;to&#0032;professionally&#0032;say - A&#0032;guide&#0032;for&#0032;your&#0032;daily&#0032;&#0034;professional&#0034;&#0032;interactions | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    </p>
+    <p align="center">
+      <a href="https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/new?template=bug_report.md">Bug report</a>
+      ·
+      <a href="https://github.com/AkashRajpurohit/howtoprofessionallysay/issues/new?template=feature_request.md">Feature request</a>
+    </p>
+  </p>
+</p>
 
-> A guide for your daily professional interactions.
+<hr />
 
 A simple static website for common phrases we might want to say to your colleagues but want to make it sound more professional.
 
@@ -46,7 +66,8 @@ Please check the [guide](/CONTRIBUTING.md) to learn more about contributing to t
 * Icons from [flaticon](https://www.flaticon.com/authors/eucalyp) and [feathericons](https://feathericons.com/)
 
 # Where to find me? 👦🏽
-* [Website](https://akashrajpurohit.com/)
-* [Linkedin](https://www.linkedin.com/in/AkashRajpurohit)
-* [Instagram](https://www.instagram.com/akashwho.codes)
-* [Twitter](https://www.twitter.com/AkashWhoCodes)
+[![Website Badge](https://img.shields.io/badge/-akashrajpurohit.com-3b5998?logo=google-chrome&logoColor=white)](https://akashrajpurohit.com/)
+[![Twitter Badge](https://img.shields.io/badge/-@akashwhocodes-00acee?logo=Twitter&logoColor=white)](https://twitter.com/AkashWhoCodes)
+[![Linkedin Badge](https://img.shields.io/badge/-@AkashRajpurohit-0e76a8?logo=Linkedin&logoColor=white)](https://linkedin.com/in/AkashRajpurohit)
+[![Instagram Badge](https://img.shields.io/badge/-@akashwho.codes-e4405f?logo=Instagram&logoColor=white)](https://instagram.com/akashwho.codes/)
+[![Telegram Badge](https://img.shields.io/badge/-@AkashRajpurohit-0088cc?logo=Telegram&logoColor=white)](https://t.me/AkashRajpurohit)
