@@ -9,7 +9,7 @@ const Umami = () => {
         defer
         data-cache="true"
         data-website-id="0ef8d12e-17b8-49c9-9c8e-9148683a7123"
-        src="https://tanjiro.akashrajpurohit.com/monjiro.js"
+        src="https://rengoku.akashrajpurohit.com/monjiro.js"
       />
     </>
   );
