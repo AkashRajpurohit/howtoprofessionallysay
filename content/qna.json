@@ -423,6 +423,17 @@
     "question": "Nobody has a clue.",
     "answer": "I failed to find any knowledge keeper for this.",
     "alternativeAnswers": []
+  },
+  {
+    "id": 70,
+    "question": "Figure it out yourself!",
+    "answer": "I cannot assist. However, I am confident in your ability to find a solution here.",
+    "alternativeAnswers": []
+  },
+  {
+    "id": 71,
+    "question": "Well, one of us needs to do this, and it's not going to be me.",
+    "answer": "This task has to be prioritized, and I encourage you to take the lead on it.",
+    "alternativeAnswers": []
   }
-
 ]
