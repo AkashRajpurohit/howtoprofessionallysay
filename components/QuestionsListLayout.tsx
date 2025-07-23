@@ -8,6 +8,7 @@ import { CURRENT_FLOW_KEY, FAV_KEY, FILTER_OPTIONS_KEY } from 'lib/utils';
 import FlowOfData from './FlowOfData';
 import PrintPageButton from './PrintPageButton';
 import FilterVisibilityModeButton from './FilterVisibilityModeButton';
+import EternalVaultCard from './EternalVaultCard';
 
 const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
   const {
@@ -47,7 +48,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
 
   return (
     <div>
-      <div className="top-0 bg-gray-50 py-4 shadow-none dark:bg-gray-900 lg:sticky">
+      <div className="top-0 z-50 bg-gray-50 py-4 shadow-none dark:bg-gray-900 lg:sticky">
         <FlowOfData />
         <div className="flex items-center gap-3 print:hidden">
           <div className="flex-grow">
@@ -59,10 +60,17 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
       </div>
       <ul role="list" className="divide-y-2 divide-gray-500">
         {!questionsToRenderBasedOnFilterOptions.length && <NoQuestionFound />}
-        {questionsToRenderBasedOnFilterOptions.map((qna) => (
-          <li key={qna.id} className="py-6">
-            <QuestionCard qna={qna} />
-          </li>
+        {questionsToRenderBasedOnFilterOptions.map((qna, index) => (
+          <React.Fragment key={qna.id}>
+            <li className="py-6">
+              <QuestionCard qna={qna} />
+            </li>
+            {index === 3 && (
+              <li className="py-6">
+                <EternalVaultCard />
+              </li>
+            )}
+          </React.Fragment>
         ))}
       </ul>
     </div>
