@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://howtoprofessionallysay.akashrajpurohit.com/">
-    <img src="/public/static/images/twitter-card.png" alt="How to Professionally Say" width="600" />
+    <img src="./public/static/images/twitter-card.png" alt="How to Professionally Say" width="600" />
   </a>
 
   <h3 align="center">How to Professionally Say</h3>
@@ -34,6 +34,8 @@ A simple static website for common phrases we might want to say to your colleagu
 The data for this is being collected from content created by _[@loewhaley](https://www.instagram.com/loewhaley/)_ on Instagram. 
 
 **Read more about the project [here](https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/)**
+
+<a href="https://eternalvault.app/?ref=htps"><img src="./public/static/images/sponsor-banner.png" alt="Eternal Vault" width="100%" /></a>
 
 # Disclaimer ❎
 Hello reader. If you are coming from [hackernews](https://news.ycombinator.com/item?id=31224996) or [reddit](https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/), firstly I want to thank you for sharing your thoughts and suggestions (if any). The intent of the project is not to make you respond in a passive aggressive tone but to show you some alternatives of **how you might feel like saying sometimes** over **how you can reframe it a bit better (in some cases at least)**
