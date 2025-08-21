@@ -65,7 +65,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
             <li className="py-6">
               <QuestionCard qna={qna} />
             </li>
-            {index === 3 && (
+            {index === 0 && (
               <li className="py-6">
                 <EternalVaultCard />
               </li>
