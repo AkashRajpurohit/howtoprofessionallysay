@@ -16,8 +16,32 @@ const Umami = () => {
   );
 };
 
+const Rybbit = () => {
+  const rybbitSrcUrl = process.env.NEXT_PUBLIC_RYBBIT_URL;
+  const rybbitId = process.env.NEXT_PUBLIC_RYBBIT_ID;
+  return (
+    <>
+      <Script
+        src={rybbitSrcUrl}
+        data-site-id={rybbitId}
+        data-track-query="false"
+        data-session-replay="true"
+        data-track-errors="true"
+        data-web-vitals="true"
+        async
+        defer
+      />
+    </>
+  );
+};
+
 const Analytics = () => {
-  return <>{isProduction && <Umami />}</>;
+  return (
+    <>
+      {isProduction && <Umami />}
+      {isProduction && <Rybbit />}
+    </>
+  );
 };
 
 export default Analytics;
