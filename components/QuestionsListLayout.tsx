@@ -8,7 +8,7 @@ import { CURRENT_FLOW_KEY, FAV_KEY, FILTER_OPTIONS_KEY } from 'lib/utils';
 import FlowOfData from './FlowOfData';
 import PrintPageButton from './PrintPageButton';
 import FilterVisibilityModeButton from './FilterVisibilityModeButton';
-import EternalVaultCard from './EternalVaultCard';
+import CatchIntentCard from './CatchIntentCard';
 
 const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
   const {
@@ -65,9 +65,9 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
             <li className="py-6">
               <QuestionCard qna={qna} />
             </li>
-            {index === 0 && (
+            {index === 1 && (
               <li className="py-6">
-                <EternalVaultCard />
+                <CatchIntentCard />
               </li>
             )}
           </React.Fragment>
