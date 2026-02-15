@@ -35,7 +35,11 @@ The data for this is being collected from content created by _[@loewhaley](https
 
 **Read more about the project [here](https://akashrajpurohit.com/blog/journey-into-how-to-professionally-say-project/)**
 
-<a href="https://eternalvault.app/?ref=htps"><img src="./public/static/images/sponsor-banner.png" alt="Eternal Vault" width="100%" /></a>
+# Support 💖
+
+Checkout my product [Catch Intent](https://catchintent.com/?ref=htps) which is a tool to help you turn social conversations into qualified leads.
+
+<a href="https://catchintent.com/?ref=htps"><img src="./public/static/images/catchintent-banner.png" alt="Catch Intent" width="100%" /></a>
 
 # Disclaimer ❎
 Hello reader. If you are coming from [hackernews](https://news.ycombinator.com/item?id=31224996) or [reddit](https://www.reddit.com/r/programming/comments/ug5ivo/how_to_professionally_say/), firstly I want to thank you for sharing your thoughts and suggestions (if any). The intent of the project is not to make you respond in a passive aggressive tone but to show you some alternatives of **how you might feel like saying sometimes** over **how you can reframe it a bit better (in some cases at least)**
