@@ -9,6 +9,7 @@ import FlowOfData from './FlowOfData';
 import PrintPageButton from './PrintPageButton';
 import FilterVisibilityModeButton from './FilterVisibilityModeButton';
 import CatchIntentCard from './CatchIntentCard';
+import { matchSorter } from 'match-sorter';
 
 const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
   const {
@@ -18,6 +19,7 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
     filterOptions,
     setFilterOption,
     setFlow,
+    searchValue,
   } = useStore();
 
   useEffect(() => {
@@ -44,6 +46,10 @@ const QuestionsListLayout: FunctionComponent = (): JSX.Element => {
 
   const questionsToRenderBasedOnFilterOptions = filterOptions.all
     ? questionsToDisplay
+    : searchValue
+    ? matchSorter(favoriteQuestions, searchValue, {
+        keys: ['question', 'answer', 'alternativeAnswers'],
+      })
     : favoriteQuestions;
 
   return (
